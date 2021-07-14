@@ -1,0 +1,82 @@
+@font-face { font-family: Poppins-Light; src: url('/fonts/Poppins-Light.ttf');font-display: swap; } 
+@font-face { font-family: Poppins-Medium; src: url('/fonts/Poppins-Medium.ttf');font-display: swap; } 
+@font-face { font-family: Poppins-Regular; src: url('/fonts/Poppins-Regular.ttf');font-display: swap; } 
+
+:root{
+    --primary-colour: #F0544F;
+    --secondary-colour: #113537;
+    --text-colour:#113537;
+    --white:#ffff;
+    --nav-height:45px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins-Regular, sans-serif;
+    color: var(--secondary-colour);
+    list-style: none;
+    text-decoration: none;
+}
+
+.spacing{
+    margin: 0px 7.5% 0 7.5%;
+    max-width:85%
+}
+
+nav {
+    width: 100%;
+    height: var(--nav-height);
+    background-color: var(--secondary-colour);
+    /* TODO : Make the navbar sticky and dissapear when scrolling down, 
+    but appear when scrolling up */
+    position: absolute;
+    z-index: 10;
+}
+
+nav li a{ 
+    font-size: 14px;
+    color: var(--white);
+    line-height: var(--nav-height);
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav .nav-main{
+    float: left;
+}
+
+nav .nav-links{
+    float: right;
+    display: flex;
+    margin: auto;
+}
+
+nav .nav-links li{
+    margin-right: 20px;
+}
+
+.landing{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.landing .hero{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.landing h1{
+    font-size: 19px;
+    /* TODO : Make font light family */
+    font-family: Poppins-Light !important;
+}

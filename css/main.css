@@ -59,7 +59,7 @@ nav .nav-links li{
     margin-right: 20px;
 }
 
-.landing{
+.section{
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -79,4 +79,21 @@ nav .nav-links li{
     font-size: 19px;
     /* TODO : Make font light family */
     font-family: Poppins-Light !important;
+}
+
+.landing .call-to-action{
+    margin-top: 5vh;
+}
+
+.landing .call-to-action a{
+    color: var(--white);
+    font-family: Poppins-Light;
+    background-color: var(--primary-colour);
+    padding: 7px 30px;
+    text-align: center;
+}
+
+.landing .call-to-action span{
+    color:var(--white);
+    margin-left: 10px;
 }

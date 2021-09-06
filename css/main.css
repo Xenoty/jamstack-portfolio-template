@@ -97,3 +97,22 @@ nav .nav-links li{
     color:var(--white);
     margin-left: 10px;
 }
+
+footer {
+    padding: 3vh 0;
+    width: 100vw;
+    background-color: var(--secondary-colour);
+}
+
+footer * {
+    color: var(--white);
+}
+
+footer .copy-right{
+    text-align: center;
+}
+
+.footer .footer-links{
+    display: grid;
+    grid-template-columns: 2;
+}

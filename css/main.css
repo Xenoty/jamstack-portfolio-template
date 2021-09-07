@@ -106,13 +106,42 @@ footer {
 
 footer * {
     color: var(--white);
+    font-size: 14px;
+    font-family: Poppins-Light, sans-serif;
+}
+
+footer a{
+    color: #DBDBDB;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 footer .copy-right{
     text-align: center;
+    margin-bottom: 25px;
 }
 
-.footer .footer-links{
+footer .footer-links{
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    margin: auto;
+    grid-gap: 50px;
+}
+
+footer .footer-link{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 8px;
+}
+
+footer .footer-category-title{
+    font-family: Poppins-Medium, sans-serif;
+}
+
+footer .sitemap a{
+    display: flex;
+    flex-direction: column;
 }

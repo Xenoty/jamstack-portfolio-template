@@ -8,6 +8,13 @@
     --text-colour:#113537;
     --white:#ffff;
     --nav-height:45px;
+    --h1: #F0544F;
+}
+
+h1{
+    color: var(--h1);
+    font-family: Poppins-Regular;
+    font-size: 36px;
 }
 
 *{
@@ -65,6 +72,10 @@ nav .nav-links li{
     position: relative;
 }
 
+.landing{
+    background-color: #E6E6E6;
+}
+
 .landing .hero{
     position: absolute;
     top: 45%;
@@ -77,8 +88,8 @@ nav .nav-links li{
 
 .landing h1{
     font-size: 19px;
-    /* TODO : Make font light family */
-    font-family: Poppins-Light !important;
+    font-family: Poppins-Light, sans-serif;
+    font-weight: 500;
 }
 
 .landing .call-to-action{
@@ -96,6 +107,10 @@ nav .nav-links li{
 .landing .call-to-action span{
     color:var(--white);
     margin-left: 10px;
+}
+
+.featured {
+    margin-top: 20vh;
 }
 
 footer {

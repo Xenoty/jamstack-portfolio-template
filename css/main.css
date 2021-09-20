@@ -319,6 +319,7 @@ footer * {
 
 footer a{
     color: #DBDBDB;
+    margin: auto 0;
 }
 
 footer a:hover{
@@ -342,6 +343,13 @@ footer .footer-link{
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 8px;
+    margin-bottom: 5px;
+}
+
+.footer-link img{
+    width: 100%;
+    height: 100%;
+    max-height: 25px;
 }
 
 footer .footer-category-title{

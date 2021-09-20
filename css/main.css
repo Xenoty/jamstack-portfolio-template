@@ -9,6 +9,8 @@
     --white:#ffff;
     --nav-height:45px;
     --h1: #F0544F;
+    --input-field-background: #F8F8F8;
+    --placeholder: #D2D1D1;
 }
 
 h1{
@@ -24,6 +26,7 @@ h1{
     color: var(--secondary-colour);
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .spacing{
@@ -71,6 +74,10 @@ nav .nav-links li{
     position: relative;
 }
 
+.section .title{
+    text-align: center;
+}
+
 .landing{
     background-color: #E6E6E6;
 }
@@ -108,9 +115,99 @@ nav .nav-links li{
     margin-left: 10px;
 }
 
+/*#region Featured*/
+
 .featured {
     margin-top: 20vh;
+    text-align: center;
 }
+
+/*#endregion*/
+
+/*#region Contact-section */
+
+.contact-page .title {
+    max-width: 37vw;
+    min-width: 20em;
+    margin: auto;
+    margin-bottom: 9vh;
+}
+
+.contact-form{
+    width: fit-content;
+    margin: auto;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.contact-detail *{
+    display: block;
+}
+
+.contact-detail{
+    margin-bottom: 15px;
+}
+
+.contact-detail label{
+    margin-bottom: 3px;
+}
+
+input, textarea{
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+input{
+    height: fit-content;
+}
+
+textarea{
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    border-radius: 2pt;
+    border: 1px solid var(--secondary-colour);
+    outline: none;
+    transition: .1s;
+}
+
+.contact-detail input{
+    background-color: var(--input-field-background);
+    padding: 7px 16px;
+}
+
+.contact-detail textarea{
+    padding: 11px 16px;
+    background-color: var(--input-field-background);
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 6px 16px;
+    border-radius: 5px;
+}
+
+.contact-detail input[type="submit"]{
+    background-color: var(--primary-colour);
+    color: var(--white);
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+::placeholder{
+    color: var(--placeholder);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--placeholder);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--placeholder);
+}
+
+/*#endregion */
 
 footer {
     padding: 3vh 0;

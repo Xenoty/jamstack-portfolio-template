@@ -26,7 +26,9 @@
     </header>
 
     <main>
-        
+        <div class="section">
+
+        </div>
     </main>
 
     <footer>
@@ -36,11 +38,11 @@
 </html>
 
 <script>
-$.get("../components/nav.html", function(data){
-    $("header").replaceWith(data);
-});
+    $.get("../components/nav.html", function(data){
+        $("header").replaceWith(data);
+    });
 
-$.get("../components/footer.html", function(data){
-    $("footer").replaceWith(data);
-});
+    $.get("../components/footer.html", function(data){
+        $("footer").replaceWith(data);
+    });
 </script>

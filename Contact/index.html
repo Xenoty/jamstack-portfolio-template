@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Get in Touch</title>
+    <title>John Doe - Contact Page</title>
+    <!-- <meta name="Description" CONTENT="I am a passionate Social Media Marketer with an unmatched work ethic. Vist my site to find out more..."> -->
+    <!-- <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://www.jinjerjane.com/"
+        }
+    </script> -->
+
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../js/main.js" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    
+    <header>
+        <!-- Nav injected by script -->
+    </header>
+
+    <main>
+        <div class="section">
+
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer injected by script -->
+    </footer>
 </body>
 </html>
+
+<script>
+    $.get("../components/nav.html", function(data){
+        $("header").replaceWith(data);
+    });
+
+    $.get("../components/footer.html", function(data){
+        $("footer").replaceWith(data);
+    });
+</script>

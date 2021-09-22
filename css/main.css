@@ -47,7 +47,7 @@ h1{
 }
 
 .section{
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -251,7 +251,7 @@ nav .nav-links li{
 }
 
 /* TODO: Write script to count, if odd, apply this. */
-.card:last-child{
+.last-card{
     grid-column-start: 1;
     grid-column-end: 3;
 }

@@ -108,8 +108,12 @@ input:focus, textarea:focus{
     font-size: 16px;
 }
 
-.bottom-margin-l{
+.bottom-m-l{
     margin-bottom: 25vh;
+}
+
+.top-m-s{
+    margin-top: 4vh;
 }
 
 /* #endregion */
@@ -122,7 +126,7 @@ nav {
     background-color: var(--secondary-colour);
     /* TODO : Make the navbar sticky and dissapear when scrolling down, 
     but appear when scrolling up */
-    position: absolute;
+    position: relative;
     z-index: 10;
 }
 
@@ -157,6 +161,7 @@ nav .nav-links li{
 
 .landing{
     background-color: #E6E6E6;
+    margin-top: calc(-1 * var(--nav-height));
 }
 
 .landing .hero{

@@ -101,9 +101,7 @@
 
 <script>
     var amountOfCards = $('.projects').children().length;
-    if(amountOfCards > 0){
-        if(amountOfCards % 2 !== 0){
-            $('.projects').children().last().addClass("last-card");
-        }
+    if(amountOfCards > 0 && amountOfCards % 2 !== 0){
+        $('.projects').children().last().addClass("last-card");
     }
 </script>

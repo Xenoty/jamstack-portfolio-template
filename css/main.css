@@ -17,9 +17,11 @@
 
 h1{
     color: var(--h1);
-    font-family: Poppins-Regular;
+    font-family: 'Poppins-Regular';
     font-size: 36px;
     margin-bottom: 9vh;
+    line-height: 42px;
+    font-weight: 500;
 }
 
 *{
@@ -184,6 +186,7 @@ nav .nav-links li{
     font-family: Poppins-Light, sans-serif;
     font-weight: 500;
     margin-bottom: unset;
+    line-height: 30px;
 }
 
 .landing .call-to-action{

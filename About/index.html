@@ -16,9 +16,9 @@
 
 
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../js/main.js" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../js/main.js"></script>
 </head>
 <body>
     <header>
@@ -36,13 +36,3 @@
     </footer>
 </body>
 </html>
-
-<script>
-    $.get("../components/nav.html", function(data){
-        $("header").replaceWith(data);
-    });
-
-    $.get("../components/footer.html", function(data){
-        $("footer").replaceWith(data);
-    });
-</script>

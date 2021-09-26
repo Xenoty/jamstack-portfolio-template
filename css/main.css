@@ -114,8 +114,12 @@ input:focus, textarea:focus{
     margin-bottom: 25vh;
 }
 
+.top-m-m{
+    margin-top: calc(var(--nav-height) + 4vh);
+}
+
 .top-m-s{
-    margin-top: 4vh;
+    margin-top: calc(var(--nav-height) + 8vh);
 }
 
 /* #endregion */

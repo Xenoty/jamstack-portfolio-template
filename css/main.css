@@ -148,6 +148,10 @@ input:focus, textarea:focus{
     z-index: -3;
 }
 
+.rich-text{
+    margin-top: 2vh;
+}
+
 /* #endregion */
 
 /* #region NavigationBar */
@@ -468,6 +472,25 @@ footer .sitemap a{
 .skill-card img{
     border-radius: 25px;
     box-shadow: 1px 3.5px 6px 1px rgb(0 0 0 / 17%);
+}
+
+.interests-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4vh;
+    max-width: 900px;
+    margin: auto;
+}
+
+.interests-list ul{
+    display: grid;
+    grid-row-gap: 1vh;
+    height: fit-content;
+}
+
+.interests-list img{
+    max-width: 300px;
+    margin: auto;
 }
 
 /* #endregion */

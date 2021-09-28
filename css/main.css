@@ -494,3 +494,46 @@ footer .sitemap a{
 }
 
 /* #endregion */
+
+/* #region individual-work */
+
+.work-bg-img{
+    position: absolute;
+    top: 0;
+    filter: brightness(55%);
+    opacity: 0.3;
+}
+
+.project-meta .meta-container{
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    grid-gap: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.meta-container svg{
+    max-width: 50px;
+}
+
+.project-summary p{
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    line-height: 18px;
+}
+
+.project-meta{
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    margin-top: 30px;
+}
+
+.meta-container p, .meta-container a{
+    font-family: Poppins-Light, sans-serif;
+}
+
+/* #endregion */

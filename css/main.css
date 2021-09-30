@@ -47,6 +47,9 @@ h1{
     padding: 7px 30px;
     text-align: center;
     border-radius: 5px;
+    display: block;
+    width: fit-content;
+    position: relative;
 }
 
 .bg-white{
@@ -150,6 +153,13 @@ input:focus, textarea:focus{
 
 .rich-text{
     margin-top: 2vh;
+}
+
+.centre-parent{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* #endregion */
@@ -529,11 +539,19 @@ footer .sitemap a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 40px;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .meta-container p, .meta-container a{
     font-family: Poppins-Light, sans-serif;
+    font-size: 14px;
+    margin: auto;
+}
+
+.cta span{
+    color: var(--white);
+    position: absolute;
+    right: 14px;
 }
 
 /* #endregion */

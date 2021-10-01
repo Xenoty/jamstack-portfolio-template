@@ -75,6 +75,14 @@ h1{
     text-align: center;
 }
 
+.last-section{
+
+}
+
+.full-page{
+
+}
+
 img {
     height: 100%;
     width: 100%;
@@ -308,7 +316,6 @@ nav .nav-links li{
     margin: unset;
 }
 
-/* TODO: Write script to count, if odd, apply this. */
 .last-card{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -555,6 +562,58 @@ footer .sitemap a{
     color: var(--white);
     position: absolute;
     right: 14px;
+}
+
+/* #endregion */
+
+/* #region Media Queries */
+
+@media screen and (max-width:1100px){
+
+    .section{
+        /* min-height: 60vh; */
+        min-height: fit-content;
+        margin: 10vh auto;
+    }
+
+    .landing {
+        background-color: var(--page-bg-colour);
+        min-height: 100vh !important;
+        margin-top: calc(-1 * var(--nav-height)) !important;
+    }
+
+    .top-m-s {
+        margin-top: calc(var(--nav-height) + 2vh) !important;
+    }
+
+    .full-page{
+        min-height: 100vh;
+    }
+
+    .title h1{
+        margin-bottom: 7vh;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .last-card{
+        grid-column-end: 1;
+    }
+
+    .last-section{
+        min-height: fit-content;
+        margin-bottom: 10vh;
+    }
+
+    .about-grid{
+        margin-top: 0;
+    }
+    
+    .skills-container{
+        grid-column-gap: 4vh;
+    }
 }
 
 /* #endregion */

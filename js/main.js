@@ -2,7 +2,7 @@ const mainTag = document.getElementsByTagName("main");
 
 $(document).ready(function(){
     InsertComponents();
-  });
+});
 
 function InsertComponents(){
     $.get("../components/nav.html", function(data){

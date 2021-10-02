@@ -37,7 +37,5 @@ function ToggleHamburger(className){
         $(".hamburger-icon").children("div").each(function() {
             $(this).removeClass("ham-top-line ham-middle-line ham-bottom-line");
         });
-        // hamburgerLineArray[0].className += ' ' + "reverse-top"; 
-        // hamburgerLineArray[2].className += ' ' + "reverse-bottom"; 
     }   
 }

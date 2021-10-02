@@ -656,7 +656,7 @@ footer .sitemap a{
     }
 
     .full-page{
-        min-height: 100vh;
+        min-height: 100vh !important;
     }
 
     .title h1{
@@ -683,9 +683,17 @@ footer .sitemap a{
     .skills-container{
         grid-column-gap: 4vh;
     }
+
+    .centre-parent{
+        position: relative;
+        transform: none;
+        left: 0;
+        top: 0;
+        margin-top: 5vh;
+    }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
     .nav-links{
         display: none !important;
     }
@@ -696,10 +704,6 @@ footer .sitemap a{
 
     .card{
         grid-template-columns: 1fr;
-    }
-
-    .card-title{
-        /* text-align: center; */
     }
 
     .card-cta{
@@ -734,6 +738,15 @@ footer .sitemap a{
 
     .interests-list ul{
         margin-top: 10px;
+    }
+
+    .top-p-m{
+        padding-top: 0;
+    }
+
+    .project-meta{
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
     }
 }
 

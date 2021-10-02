@@ -232,6 +232,7 @@ nav .nav-links li{
     min-width: 40px;
     background-color: var(--white);
     height: 5px;
+    transition: 0.5s;
 }
 
 .hamburger-content{
@@ -262,20 +263,28 @@ nav .nav-links li{
     width: fit-content;
 }
 
-.ham-top-line{
+.top-line{
     transform-origin: top left;
+}
+
+.bottom-line{
+    transform-origin: bottom left;
+}
+
+.rotate-top{
     transform: rotate(45deg);
-    transition: transform 0.5s;
 }
 
 .ham-middle-line{
     background-color: var(--secondary-colour) !important;
 }
 
-.ham-bottom-line{
-    transform-origin: bottom left;
+.rotate-bottom{
     transform: rotate(-45deg);
-    transition: transform 0.5s;
+}
+
+.reset-rotate{
+    transform: rotate(0);
 }
 
 /* #endregion */

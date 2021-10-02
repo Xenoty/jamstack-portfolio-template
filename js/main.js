@@ -1,6 +1,4 @@
 const mainTag = document.getElementsByTagName("main");
-var hamburgerLineArray = [];
-var hamburgerIsOpen = false;
 
 $(document).ready(function(){
     InsertComponents();
@@ -17,11 +15,10 @@ function InsertComponents(){
 }
 
 function ToggleHamburger(className){
-
     $(className).toggle(); 
     $(mainTag).toggle();
 
-    hamburgerIsOpen = $(className).css('display') == 'block';
+    var hamburgerIsOpen = $(className).css('display') == 'block';
 
     if(hamburgerIsOpen){
         $(".hamburger-icon").children("div").each(function(index) {

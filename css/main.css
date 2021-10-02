@@ -210,6 +210,50 @@ nav .nav-links li{
     margin-right: 20px;
 }
 
+.hamburger{
+     float: right;
+     height: var(--nav-height);
+}
+
+.hamburger-icon{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 6px;
+    height: inherit;
+    padding: 10px 0;
+}
+
+.hamburger-icon .line{
+    min-width: 40px;
+    background-color: var(--white);
+}
+
+.hamburger-content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hamburger-links{
+    height: inherit;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--secondary-colour);
+}
+
+.hamburger-links li{
+    margin: auto;
+}
+
+.hamburger-links li a{
+    font-size: 20px;
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+
 /* #endregion */
 
 /* #region Landing */
@@ -613,6 +657,12 @@ footer .sitemap a{
     
     .skills-container{
         grid-column-gap: 4vh;
+    }
+}
+
+@media screen and (max-width:400px){
+    .nav-links{
+        display: none !important;
     }
 }
 

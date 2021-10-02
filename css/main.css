@@ -220,20 +220,23 @@ nav .nav-links li{
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 6px;
     height: inherit;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .hamburger-icon .line{
     min-width: 40px;
     background-color: var(--white);
+    height: 5px;
 }
 
 .hamburger-content{
+    display: none;
     position: absolute;
     left: 0;
     top: 0;
     height: 100vh;
     width: 100vw;
+    z-index: -1;
 }
 
 .hamburger-links{
@@ -252,6 +255,22 @@ nav .nav-links li{
     margin: auto;
     display: block;
     width: fit-content;
+}
+
+.ham-top-line{
+    transform-origin: top left;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+
+.ham-middle-line{
+    background-color: var(--secondary-colour) !important;
+}
+
+.ham-bottom-line{
+    transform-origin: bottom left;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
 }
 
 /* #endregion */

@@ -16,6 +16,10 @@
 
 /* #region General */
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
     color: var(--h1);
     font-family: 'Poppins-Regular';
@@ -38,6 +42,13 @@ h1{
 .spacing{
     margin: 0px 7.5% 0 7.5%;
     max-width:85%
+}
+
+.anchor-link{
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(5%, 50%);
 }
 
 .btn-primary{
@@ -103,6 +114,7 @@ input[type="submit"]{
     padding: 6px 16px;
     border-radius: 5px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 textarea{

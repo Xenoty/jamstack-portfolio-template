@@ -1,0 +1,24 @@
+{
+  "name": "Portfolio_Template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "eleventy --serve",
+    "build" : "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JK-Web-Projects/Portfolio_Template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JK-Web-Projects/Portfolio_Template/issues"
+  },
+  "homepage": "https://github.com/JK-Web-Projects/Portfolio_Template#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

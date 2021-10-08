@@ -3,92 +3,90 @@ title: John Doe - Portfolio Website
 layout: 'base.njk'
 
 ---
-<main> 
-    <div class="section landing">
-        <div class="hero">
-            <div class="avatar">
-                <img src="https://via.placeholder.com/600" alt="A picture of me">
-            </div>
-            <h1 class="into">    
-                Hi, my name is John Doe
-            </h1>
-            <h1 class="about">
-                I am an ethusiastic Social Media Manager
-            </h1>
+<div class="section landing">
+    <div class="hero">
+        <div class="avatar">
+            <img src="https://via.placeholder.com/600" alt="A picture of me">
+        </div>
+        <h1 class="into">    
+            Hi, my name is John Doe
+        </h1>
+        <h1 class="about">
+            I am an ethusiastic Social Media Manager
+        </h1>
 
-            <div class="call-to-action">
-                <a href="#latest_work" class="btn-primary">Latest Work <span>&#8595;</span></a>
+        <div class="call-to-action">
+            <a href="#latest_work" class="btn-primary">Latest Work <span>&#8595;</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="section featured spacing">
+    <span class="anchor-link" id="latest_work"></span>
+    <div class="title">
+        <h1>Featured Projects</h1>
+    </div>
+
+    <div class="projects">
+        <div class="card">
+            <img src="https://via.placeholder.com/1200" alt="Card_photo">
+            <div class="content">
+                <div class="card-title"><h4>Social Media Integration</h4></div>
+                <div class="card-date">July 2021</div>
+                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
+                <a href="#" class="card-cta btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/600" alt="Card_photo">
+            <div class="content">
+                <div class="card-title"><h4>Social Media Integration</h4></div>
+                <div class="card-date">July 2021</div>
+                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
+                <a href="#" class="card-cta btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/600" alt="Card_photo">
+            <div class="content">
+                <div class="card-title"><h4>Social Media Integration</h4></div>
+                <div class="card-date">July 2021</div>
+                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
+                <a href="#" class="card-cta btn-primary">Learn More</a>
             </div>
         </div>
     </div>
 
-    <div class="section featured spacing">
-        <span class="anchor-link" id="latest_work"></span>
-        <div class="title">
-            <h1>Featured Projects</h1>
-        </div>
+    <a class="page-link" href="/work/">All Projects <span>&#8594;</span></a>
+</div>
 
-        <div class="projects">
-            <div class="card">
-                <img src="https://via.placeholder.com/1200" alt="Card_photo">
-                <div class="content">
-                    <div class="card-title"><h4>Social Media Integration</h4></div>
-                    <div class="card-date">July 2021</div>
-                    <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                    <a href="#" class="card-cta btn-primary">Learn More</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/600" alt="Card_photo">
-                <div class="content">
-                    <div class="card-title"><h4>Social Media Integration</h4></div>
-                    <div class="card-date">July 2021</div>
-                    <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                    <a href="#" class="card-cta btn-primary">Learn More</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/600" alt="Card_photo">
-                <div class="content">
-                    <div class="card-title"><h4>Social Media Integration</h4></div>
-                    <div class="card-date">July 2021</div>
-                    <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                    <a href="#" class="card-cta btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-
-        <a class="page-link" href="/work/">All Projects <span>&#8594;</span></a>
+<div class="section contact-page spacing last-section">
+    <div class="title">
+        <h1>Interested in my work? Contact me below, its free...</h1>
     </div>
 
-    <div class="section contact-page spacing last-section">
-        <div class="title">
-            <h1>Interested in my work? Contact me below, its free...</h1>
+    <form action="" class="contact-form">
+        <div class="contact-detail">
+            <label for="name">
+                Name
+            </label>
+            <input name="name" type="text" placeholder="John Doe">
         </div>
-
-        <form action="" class="contact-form">
-            <div class="contact-detail">
-                <label for="name">
-                    Name
-                </label>
-                <input name="name" type="text" placeholder="John Doe">
-            </div>
-            <div class="contact-detail">
-                <label for="email">
-                    Email
-                </label>
-                <input name="email" type="email" placeholder="example@domain.com">
-            </div>
-            <div class="contact-detail">
-                <label for="message">
-                    Message
-                </label>
-                <textarea name="message" rows="4" placeholder="Enter message here..."></textarea>
-            </div>
-            <input type="submit" value="Get in Touch" class="btn-primary">
-        </form>
-    </div>
-</main>
+        <div class="contact-detail">
+            <label for="email">
+                Email
+            </label>
+            <input name="email" type="email" placeholder="example@domain.com">
+        </div>
+        <div class="contact-detail">
+            <label for="message">
+                Message
+            </label>
+            <textarea name="message" rows="4" placeholder="Enter message here..."></textarea>
+        </div>
+        <input type="submit" value="Get in Touch" class="btn-primary">
+    </form>
+</div>
 
 <script>
 var amountOfCards = $('.projects').children().length;

@@ -14,11 +14,15 @@
     </script> -->
     <title>{{ title }}</title>
 
-    <link href="style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="main.js"></script>
+    <script src="/main.js"></script>
 </head>
 <body>
-    {{ content / safe }}
+    {% include 'header.njk' %}
+    
+    {{ content | safe }}
+
+    {% include 'footer.njk' %}
 </body>
 </html>

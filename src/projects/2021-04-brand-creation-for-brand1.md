@@ -1,6 +1,6 @@
 ---
 title: Social Media Creation 1
-date: July 2021
+date: 2021-05-01
 image: /assets/projects/placeholder-img.jpg
 imageAlt: This is a test
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...

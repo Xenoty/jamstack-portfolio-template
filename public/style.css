@@ -1,6 +1,6 @@
-@font-face { font-family: Poppins-Light; src: url('/fonts/Poppins-Light.ttf');font-display: swap; } 
-@font-face { font-family: Poppins-Medium; src: url('/fonts/Poppins-Medium.ttf');font-display: swap; } 
-@font-face { font-family: Poppins-Regular; src: url('/fonts/Poppins-Regular.ttf');font-display: swap; } 
+@font-face { font-family: Poppins-Light; src: url('assets/fonts/Poppins-Light.ttf');font-display: swap; } 
+@font-face { font-family: Poppins-Medium; src: url('assets/fonts/Poppins-Medium.ttf');font-display: swap; } 
+@font-face { font-family: Poppins-Regular; src: url('assets/fonts/Poppins-Regular.ttf');font-display: swap; } 
 
 :root{
     --primary-colour: #F0544F;

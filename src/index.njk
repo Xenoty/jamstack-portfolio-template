@@ -1,7 +1,6 @@
 ---
 title: John Doe - Portfolio Website
 layout: 'base.njk'
-
 ---
 <div class="section landing">
     <div class="hero">
@@ -28,33 +27,17 @@ layout: 'base.njk'
     </div>
 
     <div class="projects">
+        {% for item in collections.featured %}
         <div class="card">
-            <img src="https://via.placeholder.com/1200" alt="Card_photo">
+            <img src="{{ item.data.image }}" alt="{{ item.data.imageAlt }}">
             <div class="content">
-                <div class="card-title"><h4>Social Media Integration</h4></div>
-                <div class="card-date">July 2021</div>
-                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                <a href="#" class="card-cta btn-primary">Learn More</a>
+                <div class="card-title"><h4>{{ item.data.title }}</h4></div>
+                <div class="card-date">{{ item.data.date | projectDate }}</div>
+                <div class="card-breadcrumbs"><p>{{ item.data.summary }}</p></div>
+                <a href="{{ item.url }}" class="card-cta btn-primary">Learn More</a>
             </div>
         </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/600" alt="Card_photo">
-            <div class="content">
-                <div class="card-title"><h4>Social Media Integration</h4></div>
-                <div class="card-date">July 2021</div>
-                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                <a href="#" class="card-cta btn-primary">Learn More</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/600" alt="Card_photo">
-            <div class="content">
-                <div class="card-title"><h4>Social Media Integration</h4></div>
-                <div class="card-date">July 2021</div>
-                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                <a href="#" class="card-cta btn-primary">Learn More</a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 
     <a class="page-link" href="/work/">All Projects <span>&#8594;</span></a>

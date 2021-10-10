@@ -10,60 +10,19 @@ layout: 'base.njk'
     </div>
 
     <div class="projects">
+
+        {% for project in collections.project %}
         <div class="card">
-            <img src="https://via.placeholder.com/600" alt="Card_photo">
+            <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}">
             <div class="content">
-                <div class="card-title"><h4>Social Media Integration</h4></div>
-                <div class="card-date">July 2021</div>
-                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
+                <div class="card-title"><h4>{{ project.data.title }}</h4></div>
+                <div class="card-date">{{ project.data.date }}</div>
+                <div class="card-breadcrumbs"><p>{{ project.data.description }}</p></div>
                 <a href="#" class="card-cta btn-primary">Learn More</a>
             </div>
         </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/600" alt="Card_photo">
-            <div class="content">
-                <div class="card-title"><h4>Social Media Integration</h4></div>
-                <div class="card-date">July 2021</div>
-                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                <a href="#" class="card-cta btn-primary">Learn More</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/600" alt="Card_photo">
-            <div class="content">
-                <div class="card-title"><h4>Social Media Integration</h4></div>
-                <div class="card-date">July 2021</div>
-                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                <a href="#" class="card-cta btn-primary">Learn More</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/600" alt="Card_photo">
-            <div class="content">
-                <div class="card-title"><h4>Social Media Integration</h4></div>
-                <div class="card-date">July 2021</div>
-                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                <a href="#" class="card-cta btn-primary">Learn More</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/600" alt="Card_photo">
-            <div class="content">
-                <div class="card-title"><h4>Social Media Integration</h4></div>
-                <div class="card-date">July 2021</div>
-                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                <a href="#" class="card-cta btn-primary">Learn More</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/600" alt="Card_photo">
-            <div class="content">
-                <div class="card-title"><h4>Social Media Integration</h4></div>
-                <div class="card-date">July 2021</div>
-                <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-                <a href="#" class="card-cta btn-primary">Learn More</a>
-            </div>
-        </div>
+
+        {% endfor %}
     </div>
 
 </div>

@@ -1,6 +1,22 @@
 ---
 title: John Doe - Get to know me
 layout: 'base.njk'
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+linkedInLink: https://www.linkedin.com/
+resumeLink: https://www.linkedin.com/
+skills: 
+    - skill:
+        name: Marketing
+        image: https://via.placeholder.com/400
+        imageAlt: placeholder,
+    - skill:
+        name: Marketing
+        image: https://via.placeholder.com/400
+        imageAlt: placeholder,
+    - skill:
+        name: Marketing
+        image: https://via.placeholder.com/400
+        imageAlt: placeholder
 ---
 
 <!-- <div class="section pg-fixed-bg bg-colour-main"></div> -->
@@ -13,13 +29,11 @@ layout: 'base.njk'
         <img src="https://via.placeholder.com/800x600" alt="Placeholder">
         <div class="about-intro">
             <p class="intro-meta">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud
+               {{ summary }}
             </p>
             <div class="about-links">
-                <a href="#" class="btn-primary bg-white font-italics">LinkedIn <span>&#8594;</span></a>
-                <a href="#" class="btn-primary bg-white font-italics">Resume<span>&#8594;</span></a>
+                <a href="#" class="btn-primary bg-white font-italics">{{ linkedInLink }} <span>&#8594;</span></a>
+                <a href="#" class="btn-primary bg-white font-italics">{{ resumeLink }}<span>&#8594;</span></a>
             </div>
         </div>
     </div>
@@ -32,30 +46,14 @@ layout: 'base.njk'
 
     <div class="skills">
         <div class="skills-container">
-            <div class="skill-card">
-                <p>Marketing</p>
-                <img src="https://via.placeholder.com/400" alt="placeholder">
-            </div>
-            <div class="skill-card">
-                <p>Marketing</p>
-                <img src="https://via.placeholder.com/400" alt="placeholder">
-            </div>
-            <div class="skill-card">
-                <p>Marketing</p>
-                <img src="https://via.placeholder.com/400" alt="placeholder">
-            </div>
-            <div class="skill-card">
-                <p>Marketing</p>
-                <img src="https://via.placeholder.com/400" alt="placeholder">
-            </div>
-            <div class="skill-card">
-                <p>Marketing</p>
-                <img src="https://via.placeholder.com/400" alt="placeholder">
-            </div>
-            <div class="skill-card">
-                <p>Marketing</p>
-                <img src="https://via.placeholder.com/400" alt="placeholder">
-            </div>
+
+            {% for item in skills %}
+                <div class="skill-card">
+                    <p>{{ item.skill.name }}</p>
+                    <img src="{{ item.skill.image }}" alt="{{ item.skill.imageAlt }}">
+                </div>
+            {% endfor %}
+            
         </div>
     </div>
 </div>

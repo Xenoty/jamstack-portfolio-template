@@ -1,5 +1,5 @@
 const { DateTime } = require("luxon");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+// const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
 
@@ -21,9 +21,9 @@ module.exports = function(eleventyConfig) {
 
     //#region plugins
 
-     eleventyConfig.addPlugin(syntaxHighlight, {
-        trim: true,
-    });
+    //  eleventyConfig.addPlugin(syntaxHighlight, {
+    //     trim: true,
+    // });
 
     //#endregion
 

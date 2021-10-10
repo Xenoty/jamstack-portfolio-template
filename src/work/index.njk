@@ -19,7 +19,7 @@ layout: 'base.njk'
                 <div class="card-title"><h4>{{ project.data.title }}</h4></div>
                 <div class="card-date">{{ project.data.date | projectDate}}</div>
                 <div class="card-breadcrumbs"><p>{{ project.data.description }}</p></div>
-                <a href="#" class="card-cta btn-primary">Learn More</a>
+                <a href="{{ project.url }}" class="card-cta btn-primary">Learn More</a>
             </div>
         </div>
 

@@ -4,19 +4,6 @@ layout: 'base.njk'
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 linkedInLink: https://www.linkedin.com/
 resumeLink: https://www.linkedin.com/
-skills: 
-    - skill:
-        name: Marketing
-        image: https://via.placeholder.com/400
-        imageAlt: placeholder,
-    - skill:
-        name: Marketing
-        image: https://via.placeholder.com/400
-        imageAlt: placeholder,
-    - skill:
-        name: Marketing
-        image: https://via.placeholder.com/400
-        imageAlt: placeholder
 ---
 
 <!-- <div class="section pg-fixed-bg bg-colour-main"></div> -->
@@ -47,10 +34,10 @@ skills:
     <div class="skills">
         <div class="skills-container">
 
-            {% for item in skills %}
+            {% for skill in skills %}
                 <div class="skill-card">
-                    <p>{{ item.skill.name }}</p>
-                    <img src="{{ item.skill.image }}" alt="{{ item.skill.imageAlt }}">
+                    <p>{{ skill.name }}</p>
+                    <img src="{{ skill.image }}" alt="{{ skill.imageAlt }}">
                 </div>
             {% endfor %}
             

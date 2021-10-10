@@ -1,0 +1,20 @@
+{
+    "skills" :
+    [
+        {
+            "name" : "Marketing",
+            "image" : "https://via.placeholder.com/400",
+            "imageAlt" : "placeholder"
+        },
+        {
+            "name" : "Marketing",
+            "image" : "https://via.placeholder.com/400",
+            "imageAlt" : "placeholder"
+        },
+        {
+            "name" : "Marketing",
+            "image" : "https://via.placeholder.com/400",
+            "imageAlt" : "placeholder"
+        }
+    ]
+}

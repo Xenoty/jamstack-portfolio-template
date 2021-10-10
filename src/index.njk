@@ -2,6 +2,7 @@
 title: John Doe - Portfolio Website
 layout: 'base.njk'
 ---
+
 <div class="section landing">
     <div class="hero">
         <div class="avatar">
@@ -27,17 +28,11 @@ layout: 'base.njk'
     </div>
 
     <div class="projects">
-        {% for item in collections.featured %}
-        <div class="card">
-            <img src="{{ item.data.image }}" alt="{{ item.data.imageAlt }}">
-            <div class="content">
-                <div class="card-title"><h4>{{ item.data.title }}</h4></div>
-                <div class="card-date">{{ item.data.date | projectDate }}</div>
-                <div class="card-breadcrumbs"><p>{{ item.data.summary }}</p></div>
-                <a href="{{ item.url }}" class="card-cta btn-primary">Learn More</a>
-            </div>
-        </div>
+
+        {% for project in collections.featured %}
+            {% include 'project-snippet.njk' %}
         {% endfor %}
+        
     </div>
 
     <a class="page-link" href="/work/">All Projects <span>&#8594;</span></a>

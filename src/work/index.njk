@@ -11,19 +11,10 @@ layout: 'base.njk'
 
     <div class="projects">
 
-        {% for project in collections.project %}
-
-        <div class="card">
-            <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}">
-            <div class="content">
-                <div class="card-title"><h4>{{ project.data.title }}</h4></div>
-                <div class="card-date">{{ project.data.date | projectDate}}</div>
-                <div class="card-breadcrumbs"><p>{{ project.data.summary }}</p></div>
-                <a href="{{ project.url }}" class="card-cta btn-primary">Learn More</a>
-            </div>
-        </div>
-
+        {% for project in collections.project | reverse %}
+            {% include 'project-snippet.njk' %}
         {% endfor %}
+        
     </div>
 
 </div>

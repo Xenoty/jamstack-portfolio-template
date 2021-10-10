@@ -1,4 +1,14 @@
 {
+    "links" : [
+        { 
+            "linkName" : "LinkedIn",
+            "url" : "https://www.linkedin.com/"
+        },
+        {
+            "linkName" : "Resume",
+            "url" : "https://www.linkedin.com/"
+        }
+    ],
     "skills" :
     [
         {
@@ -16,5 +26,13 @@
             "image" : "https://via.placeholder.com/400",
             "imageAlt" : "placeholder"
         }
-    ]
+    ],
+    "interests" : [
+        "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    ],
+    "interestsImage" : "/assets/projects/placeholder-image.jpg"
 }

@@ -2,6 +2,8 @@
 title: John Doe - Get to know me
 layout: 'base.njk'
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+landingImage: /assets/projects/placeholder-image.jpg
+landingImageAlt : "placeholder"
 linkedInLink: https://www.linkedin.com/
 resumeLink: https://www.linkedin.com/
 ---
@@ -13,14 +15,15 @@ resumeLink: https://www.linkedin.com/
     </div>
 
     <div class="about-grid">
-        <img src="https://via.placeholder.com/800x600" alt="Placeholder">
+        <img src="{{ landingImage }}" alt="{{ landingImageAlt }}">
         <div class="about-intro">
             <p class="intro-meta">
                {{ summary }}
             </p>
             <div class="about-links">
-                <a href="#" class="btn-primary bg-white font-italics">{{ linkedInLink }} <span>&#8594;</span></a>
-                <a href="#" class="btn-primary bg-white font-italics">{{ resumeLink }}<span>&#8594;</span></a>
+                {% for item in links %}
+                    <a href="{{ item.url }}" class="btn-primary bg-white font-italics"> {{ item.linkName }} <span>&#8594;</span></a>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -52,10 +55,9 @@ resumeLink: https://www.linkedin.com/
 
     <div class="interests-list">
         <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+            {% for item in interests %}
+            <li>{{ item }}</li>
+            {% endfor %}
         </ul>
         <img src="https://via.placeholder.com/600" alt="placeholderImage">
     </div>

@@ -1,3 +1,19 @@
+{# ---
+socialLinks: 
+  - name: LinkedIn
+    url : https://www.linkedin.com/
+    img : https://via.placeholder.com/50
+    imgAlt: "Placeholder Image"
+  - name: Behance
+    url : https://www.linkedin.com/
+    img : https://via.placeholder.com/50
+    imgAlt: "Placeholder Image"
+  - name: Instagram
+    url : https://www.linkedin.com/
+    img : https://via.placeholder.com/50
+    imgAlt: "Placeholder Image"
+--- #}
+
 <footer>
     <div class="copy-right">
         <p>Copyright @2021 John Doe</p>
@@ -7,18 +23,26 @@
             <div class="footer-category-title">
                 <p>Follow Me</p>
             </div>
-            <div class="footer-link">
+
+            {# {% for item in socialLinks %}
+                <div class="footer-link">
+                    <img src="{{ item.img }}" alt="{{ item.imgAlt }}">
+                    <a href="#">{{ item.name }}</a>
+                </div>
+            {% endfor %} #}
+
+            {# <div class="footer-link">
                 <img src="https://via.placeholder.com/50" alt="LinkedIn">
                 <a href="#">LinkedIn</a>
-            </div>
-            <div class="footer-link">
+            </div> #}
+            {# <div class="footer-link">
                 <img src="https://via.placeholder.com/50" alt="Behance">
                 <a href="#">Behance</a>
             </div>
             <div class="footer-link">
                 <img src="https://via.placeholder.com/50" alt="Instagram">
                 <a href="#">Instagram</a>
-            </div>
+            </div> #}
         </div>
         <div class="sitemap">
             <div class="footer-category-title">

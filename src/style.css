@@ -654,6 +654,52 @@ footer .sitemap a{
     right: 14px;
 }
 
+h1, h2, h3, h4, h5, h6{
+    color: var(--h1);
+}
+
+.work-content h1{
+    margin-bottom: unset;
+    line-height: revert;
+    font-weight: revert;
+}
+
+strong{
+    position: relative;
+    z-index: 2;
+}
+
+strong::after{
+    content: '';
+    background: var(--primary-colour);
+    display: block;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.work-content ul{
+    width: fit-content;
+    margin: 15px auto;
+}
+
+table{
+    margin: 20px auto;
+}
+
+.work-content a{
+    text-decoration: underline;
+}
+
+blockquote{
+    background-color: whitesmoke;
+    padding: 4px 15px;
+}
+
 /* #endregion */
 
 /* #region Media Queries */
@@ -721,6 +767,14 @@ footer .sitemap a{
 
     .hamburger{
         display: block;
+    }
+
+    .work-content{
+        margin-top: 0px !important;
+    }
+
+    .full-page{
+        margin-bottom: 0px !important;
     }
 
     .card{

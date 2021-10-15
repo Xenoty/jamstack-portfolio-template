@@ -4,8 +4,6 @@ layout: 'base.njk'
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 landingImage: /assets/projects/placeholder-image.jpg
 landingImageAlt : "placeholder"
-linkedInLink: https://www.linkedin.com/
-resumeLink: https://www.linkedin.com/
 ---
 
 <!-- <div class="section pg-fixed-bg bg-colour-main"></div> -->
@@ -61,7 +59,9 @@ resumeLink: https://www.linkedin.com/
         </ul>
         <img src="https://via.placeholder.com/600" alt="placeholderImage">
     </div>
-    <div class="spacing rich-text">
+    <div class="spacing markdown bottom-m-l top-m-s">
+
+        {{ content | safe}}
         <!-- Need to test this with the admin rich text -->
         <!-- <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus in hac habitasse platea dictumst. Platea dictumst vestibulum rhoncus est. Sit amet justo donec enim diam vulputate. Urna nec tincidunt praesent semper feugiat nibh.

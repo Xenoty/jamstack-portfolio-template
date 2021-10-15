@@ -658,10 +658,14 @@ h1, h2, h3, h4, h5, h6{
     color: var(--h1);
 }
 
-.work-content h1{
+.markdown h1{
     margin-bottom: unset;
     line-height: revert;
     font-weight: revert;
+}
+
+.markdown a{
+    text-decoration: underline;
 }
 
 strong{
@@ -689,10 +693,6 @@ strong::after{
 
 table{
     margin: 20px auto;
-}
-
-.work-content a{
-    text-decoration: underline;
 }
 
 blockquote{

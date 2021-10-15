@@ -1,7 +1,6 @@
 ---
 title: John Doe - Latest Projects
 layout: 'base.njk'
-
 ---
 
 <div class="section spacing bottom-m-l top-m-m">
@@ -12,7 +11,7 @@ layout: 'base.njk'
     <div class="projects">
 
         {% for project in collections.project | reverse %}
-            {% include '_project-snippet.njk' %}
+            {% include 'partials/_project-snippet.njk' %}
         {% endfor %}
         
     </div>

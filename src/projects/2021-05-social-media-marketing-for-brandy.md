@@ -2,10 +2,39 @@
 title: Social Media Creation 3
 date: 2021-05-01
 tags: ["project", "featured"]
-image: /assets/projects/placeholder-image.jpg
+image: /assets/images/placeholder-image.jpg
 imageAlt: This is a test
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
 ---
+
+# Heading 1
+## Heading 2
+### Heading 3
+> This is a blockquote
+**bold text**
+*italicized text*
+1. First Item
+2. Second Item
+3. Third Item
+
+- [x] this is a complete item
+- [ ] this is an incomplete item
+- [x] @mentions, #refs, [links](),
+**formatting**, and <del>tags</del>
+supported
+- [x] list syntax required (any
+unordered or ordered list
+supported)
+
+---
+
+First Header | Second Header
+------------ | -------------
+Content cell 1 | Content cell 2
+Content column 1 | Content column 2
+
+[linkTitle](https://www.example.com)
+![alt text](/assets/projects/placeholder-image.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Netus et malesuada fames ac turpis egestas sed. Tincidunt arcu non sodales neque sodales ut etiam sit amet. Lorem ipsum dolor sit amet consectetur. Viverra justo nec ultrices dui. Vulputate ut pharetra sit amet aliquam id diam. Accumsan tortor posuere ac ut. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Tristique risus nec feugiat in fermentum posuere urna nec. Morbi tristique senectus et netus et malesuada fames ac. Non quam lacus suspendisse faucibus interdum. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Cras pulvinar mattis nunc sed blandit. Ornare suspendisse sed nisi lacus. Urna condimentum mattis pellentesque id. Diam vel quam elementum pulvinar etiam non quam lacus.
 

@@ -29,7 +29,7 @@ layout: 'base.njk'
 
     <div class="projects">
 
-        {% for project in collections.featured %}
+        {% for project in collections.featured | reverse %}
             {% include '_project-snippet.njk' %}
         {% endfor %}
         

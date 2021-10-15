@@ -28,12 +28,13 @@ layout: 'base.njk'
         <p>{{ summary }}</p>
 
         <div class="cta centre-parent">
-            <a href="#" class="btn-primary">Tell me more!<span>&#8595;</span></a>
+            <a href="#target-content" class="btn-primary">Tell me more!<span>&#8595;</span></a>
         </div>
     </div>
 </div>
 
 <div class="section work-content markdown spacing bottom-m-l top-m-s">
+    <span class="anchor-link" id="target-content"></span>
     {# <div class="work-content"> #}
         {{ content | safe }}
         <!-- Will do this later as not too sure what you can do with rich text -->

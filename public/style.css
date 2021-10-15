@@ -20,8 +20,11 @@ html{
     scroll-behavior: smooth;
 }
 
-h1{
+h1, h2, h3, h4, h5, h6{
     color: var(--h1);
+}
+
+h1{
     font-family: 'Poppins-Regular';
     font-size: 36px;
     margin-bottom: 9vh;
@@ -37,6 +40,33 @@ h1{
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+strong{
+    position: relative;
+    z-index: 2;
+}
+
+strong::after{
+    content: '';
+    background: var(--primary-colour);
+    display: block;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+table{
+    margin: 20px auto;
+}
+
+blockquote{
+    background-color: whitesmoke;
+    padding: 4px 15px;
 }
 
 .spacing{
@@ -654,10 +684,6 @@ footer .sitemap a{
     right: 14px;
 }
 
-h1, h2, h3, h4, h5, h6{
-    color: var(--h1);
-}
-
 .markdown h1{
     margin-bottom: unset;
     line-height: revert;
@@ -668,36 +694,9 @@ h1, h2, h3, h4, h5, h6{
     text-decoration: underline;
 }
 
-strong{
-    position: relative;
-    z-index: 2;
-}
-
-strong::after{
-    content: '';
-    background: var(--primary-colour);
-    display: block;
-    width: 100%;
-    height: 7px;
-    position: absolute;
-    bottom: 1px;
-    left: 0px;
-    z-index: -1;
-    opacity: 0.8;
-}
-
-.work-content ul{
+.markdown ul{
     width: fit-content;
     margin: 15px auto;
-}
-
-table{
-    margin: 20px auto;
-}
-
-blockquote{
-    background-color: whitesmoke;
-    padding: 4px 15px;
 }
 
 /* #endregion */

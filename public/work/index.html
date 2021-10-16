@@ -27,6 +27,7 @@
     <link href="/style.css" rel="stylesheet">
 
     <!-- Scripts -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/main.js"></script>
 
@@ -204,5 +205,18 @@
         </div>
     </div>
 </footer>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+
 </body>
 </html>

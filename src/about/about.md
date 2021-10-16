@@ -5,6 +5,20 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 landingImage: /assets/projects/placeholder-image.jpg
 landingImageAlt : "placeholder"
 metaDescription: "I create experiences, get to know me better and what motivates me."
+links:
+    - { linkName: "LinkedIn", url: "https://www.example.com"}
+    - { linkName: "Resume", url: "https://www.example.com"}
+skills:
+    - { name: "Skill1", image: "https://via.placeholder.com/400", imageAlt: "Image description here"}
+    - { name: "Skill2", image: "https://via.placeholder.com/400", imageAlt: "Image description here"}
+    - { name: "Skill3", image: "https://via.placeholder.com/400", imageAlt: "Image description here"}
+interests: 
+    - { item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+    - { item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+    - { item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+    - { item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+    - { item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+interestsImage: /assets/projects/placeholder-image.jpg
 ---
 
 # Heading 1

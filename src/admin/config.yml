@@ -49,12 +49,10 @@ collections:
           - { label: "Image description", name: "imageAlt", widget: "string" }
       - label : "Interests"
         name: "interests"
-        widget: "list"
-        allow_add: true
+        widget: "object"
         create: true
         collapsed: true
-      - label: "Interests Image"
-        name: "interestsImage"
-        collapsed: true
-        widget: image
+        fields:
+          - { label: "Item", name: "item", widget: "string"}
+      - { label: "Interests Image", name: "interestsImage", collapsed: true, widget: image }
       - { label: "Body", name: "body", widget: "markdown"}

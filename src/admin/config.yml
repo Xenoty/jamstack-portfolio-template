@@ -30,14 +30,13 @@ collections:
       - { label: "Landing Image", name: "landingImage", widget: "image" }
       - { label: "Landing image desciption", name: "landingImageAlt", widget: "string" }
       - { label: "Page meta description", name: "metaDescription", widget: "string" }
-      # - label: "Personal Links" 
-      #   name: "links" 
-      #   widget: "object"
-      #   create: true
-      #   collapsed: true
-      #   fields: 
-      #     - { label: "Name", name: "linkName", widget: "string" }
-      #     - { label: "url", name: "url", widget: "string" }
+      - label: "Links" 
+        name: "links" 
+        widget: "object"
+        collapsed: true
+        fields: 
+          - { label: "Name", name: "linkName", widget: "string" }
+          - { label: "url", name: "url", widget: "string" }
       # - label: "Skills"
       #   name: "skills"
       #   widget: "object"

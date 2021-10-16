@@ -57,5 +57,5 @@ collections:
       - label: "Interests Image"
         name: "interestsImage"
         collapsed: true
-        widget: image
+        widget: "image"
       - { label: "Body", name: "body", widget: "markdown"}

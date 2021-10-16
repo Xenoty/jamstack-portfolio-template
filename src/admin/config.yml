@@ -33,7 +33,6 @@ collections:
       - label: "Personal Links" 
         name: "links" 
         widget: "object"
-        extension: "json"
         create: true
         collapsed: true
         fields: 
@@ -42,7 +41,6 @@ collections:
       - label: "Skills"
         name: "skills"
         widget: "object"
-        extension: "json"
         create: true
         collapsed: true
         fields: 
@@ -52,7 +50,6 @@ collections:
       - label : "Interests"
         name: "interests"
         widget: "list"
-        extension: "json"
         allow_add: true
         create: true
         collapsed: true

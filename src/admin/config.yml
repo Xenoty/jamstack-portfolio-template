@@ -37,24 +37,22 @@ collections:
         fields: 
           - { label: "Name", name: "linkName", widget: "string" }
           - { label: "url", name: "url", widget: "string" }
-      # - label: "Skills"
-      #   name: "skills"
-      #   widget: "object"
-      #   create: true
-      #   collapsed: true
-      #   fields: 
-      #     - { label: "Name", name: "name", widget: "string" }
-      #     - { label: "Image", name: "image", widget: "image" }
-      #     - { label: "Image description", name: "imageAlt", widget: "string" }
-      # - label : "Interests"
-      #   name: "interests"
-      #   widget: "object"
-      #   create: true
-      #   collapsed: true
-      #   fields:
-      #     - { label: "Item", name: "item", widget: "string"}
-      # - label: "Interests Image"
-      #   name: "interestsImage"
-      #   collapsed: true
-      #   widget: "image"
+      - label: "Skills"
+        name: "skills"
+        widget: "list"
+        collapsed: true
+        fields: 
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image description", name: "imageAlt", widget: "string" }
+      - label : "Interests"
+        name: "interests"
+        widget: "list"
+        collapsed: true
+        fields:
+          - { label: "Item", name: "item", widget: "string"}
+      - label: "InterestsImage"
+        name: "interestsImage"
+        collapsed: true
+        widget: "image"
       - { label: "Body", name: "body", widget: "markdown"}

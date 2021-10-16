@@ -32,7 +32,7 @@ collections:
       - { label: "Page meta description", name: "metaDescription", widget: "string" }
       - label: "Links" 
         name: "links" 
-        widget: "object"
+        widget: "list"
         collapsed: true
         fields: 
           - { label: "Name", name: "linkName", widget: "string" }

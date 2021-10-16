@@ -30,30 +30,30 @@ collections:
       - { label: "Landing Image", name: "landingImage", widget: "image" }
       - { label: "Landing image desciption", name: "landingImageAlt", widget: "string" }
       - { label: "Page meta description", name: "metaDescription", widget: "string" }
-      - label: "Personal Links" 
-        name: "links" 
-        widget: "object"
-        create: true
-        collapsed: true
-        fields: 
-          - { label: "Name", name: "linkName", widget: "string" }
-          - { label: "url", name: "url", widget: "string" }
-      - label: "Skills"
-        name: "skills"
-        widget: "object"
-        create: true
-        collapsed: true
-        fields: 
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Image description", name: "imageAlt", widget: "string" }
-      - label : "Interests"
-        name: "interests"
-        widget: "object"
-        create: true
-        collapsed: true
-        fields:
-          - { label: "Item", name: "item", widget: "string"}
+      # - label: "Personal Links" 
+      #   name: "links" 
+      #   widget: "object"
+      #   create: true
+      #   collapsed: true
+      #   fields: 
+      #     - { label: "Name", name: "linkName", widget: "string" }
+      #     - { label: "url", name: "url", widget: "string" }
+      # - label: "Skills"
+      #   name: "skills"
+      #   widget: "object"
+      #   create: true
+      #   collapsed: true
+      #   fields: 
+      #     - { label: "Name", name: "name", widget: "string" }
+      #     - { label: "Image", name: "image", widget: "image" }
+      #     - { label: "Image description", name: "imageAlt", widget: "string" }
+      # - label : "Interests"
+      #   name: "interests"
+      #   widget: "object"
+      #   create: true
+      #   collapsed: true
+      #   fields:
+      #     - { label: "Item", name: "item", widget: "string"}
       # - label: "Interests Image"
       #   name: "interestsImage"
       #   collapsed: true

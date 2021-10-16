@@ -1,5 +1,10 @@
 ---
 layout: 'about.njk'
+title: Get to know me
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+landingImage: /assets/projects/placeholder-image.jpg
+landingImageAlt : "placeholder"
+metaDescription: "I create experiences, get to know me better and what motivates me."
 ---
 
 # Heading 1

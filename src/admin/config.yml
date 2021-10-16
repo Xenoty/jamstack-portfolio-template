@@ -54,8 +54,8 @@ collections:
         collapsed: true
         fields:
           - { label: "Item", name: "item", widget: "string"}
-      - label: "Interests Image"
-        name: "interestsImage"
-        collapsed: true
-        widget: "image"
+      # - label: "Interests Image"
+      #   name: "interestsImage"
+      #   collapsed: true
+      #   widget: "image"
       - { label: "Body", name: "body", widget: "markdown"}

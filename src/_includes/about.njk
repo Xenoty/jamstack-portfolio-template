@@ -54,8 +54,8 @@ layout: 'base.njk'
 
     <div class="interests-list">                    
         <ul>
-            {% for item in interests %}
-                <li>{{ item }}</li>
+            {% for interest in interests %}
+                <li>{{ interest.item }}</li>
             {% endfor %}
         </ul>
         <img src="https://via.placeholder.com/600" alt="placeholderImage">

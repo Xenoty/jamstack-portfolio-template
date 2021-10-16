@@ -2,7 +2,8 @@
 title: Testing Project with CMS
 date: 2021-10-16T09:37:29.509Z
 tags:
-  - post
+  - project
+  - featured
 image: /assets/images/placeholder-image.jpg
 imageAlt: This is a test project
 summary: Testing the publishing feature with netlify CMS

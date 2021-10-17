@@ -5,21 +5,26 @@ media_folder: "public/assets/images"
 public_folder: "/assets/images"
 collections:
   - name: "project" 
-    label: "Project"
+    label: "List of Projects"
     folder: "src/projects" 
     create: true 
     slug: "{{year}}-{{month}}-{{slug}}" 
     fields: 
      - { label: "Title", name: "title", widget: "string" }
      - { label: "Date", name: "date", widget: "datetime" }
-     - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["project, featured"], default: ["project"] }
+     - label: "Tags"
+       name: "tags"
+       widget: "select"
+       multiple: true
+       options: ["project", "featured"]
+       default: ["project"]
      - { label: "Featured Image", name: "image", widget: "image" }
      - { label: "Image caption", name: "imageAlt", widget: "string" }
      - { label: "Summary", name: "summary", widget: "string" }
      - { label: "Page Meta Description", name: "metaDescription", widget: "string" }
      - { label: "Body", name: "body", widget: "markdown"}
-  - name : "about"
-    label: "About"
+  - name: "about"
+    label: "About Page"
     folder: "src/about"
     create: false
     delete: false
@@ -30,18 +35,16 @@ collections:
       - { label: "Landing Image", name: "landingImage", widget: "image" }
       - { label: "Landing image desciption", name: "landingImageAlt", widget: "string" }
       - { label: "Page meta description", name: "metaDescription", widget: "string" }
-      - label: "Personal Links" 
+      - label: "Links" 
         name: "links" 
-        widget: "object"
-        create: true
+        widget: "list"
         collapsed: true
         fields: 
           - { label: "Name", name: "linkName", widget: "string" }
           - { label: "url", name: "url", widget: "string" }
       - label: "Skills"
         name: "skills"
-        widget: "object"
-        create: true
+        widget: "list"
         collapsed: true
         fields: 
           - { label: "Name", name: "name", widget: "string" }
@@ -49,10 +52,41 @@ collections:
           - { label: "Image description", name: "imageAlt", widget: "string" }
       - label : "Interests"
         name: "interests"
-        widget: "object"
-        create: true
+        widget: "list"
         collapsed: true
         fields:
           - { label: "Item", name: "item", widget: "string"}
-      - { label: "Interests Image", name: "interestsImage", collapsed: true, widget: image }
+      - label: "InterestsImage"
+        name: "interestsImage"
+        collapsed: true
+        widget: "image"
       - { label: "Body", name: "body", widget: "markdown"}
+  - name: "contact"
+    label: "Contact Page"
+    folder: "src/contact"
+    create: false
+    delete: false
+    slug: "{{ title }}"
+    fields: 
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page meta description", name: "metaDescription", widget: "string" }
+  - name: "work"
+    label: "Work Page"
+    folder: "src/work"
+    create: false
+    delete: false
+    slug: "{{ title }}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+  - name: "src"
+    label: "Home Page"
+    folder: "src"
+    create: false
+    delete: false
+    slug: "{{ title }}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+      - { label: "Introduction", name: "intro", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string" }

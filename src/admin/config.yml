@@ -5,7 +5,7 @@ media_folder: "public/assets/images"
 public_folder: "/assets/images"
 collections:
   - name: "project" 
-    label: "Project"
+    label: "List of Projects"
     folder: "src/projects" 
     create: true 
     slug: "{{year}}-{{month}}-{{slug}}" 
@@ -23,8 +23,8 @@ collections:
      - { label: "Summary", name: "summary", widget: "string" }
      - { label: "Page Meta Description", name: "metaDescription", widget: "string" }
      - { label: "Body", name: "body", widget: "markdown"}
-  - name : "about"
-    label: "About"
+  - name: "about"
+    label: "About Page"
     folder: "src/about"
     create: false
     delete: false
@@ -62,16 +62,16 @@ collections:
         widget: "image"
       - { label: "Body", name: "body", widget: "markdown"}
   - name: "contact"
-    label: "Contact"
+    label: "Contact Page"
     folder: "src/contact"
     create: false
     delete: false
     slug: "{{ title }}"
-    fields:
+    fields: 
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+      - { label: "Page meta description", name: "metaDescription", widget: "string" }
   - name: "work"
-    label: "Work"
+    label: "Work Page"
     folder: "src/work"
     create: false
     delete: false
@@ -80,7 +80,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
   - name: "src"
-    label: "Home"
+    label: "Home Page"
     folder: "src"
     create: false
     delete: false

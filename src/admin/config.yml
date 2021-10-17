@@ -64,6 +64,8 @@ collections:
   - name: "contact"
     label: "Contact Page"
     folder: "src/contact"
+    extension: "html"
+    format: "json"
     create: false
     delete: false
     slug: "{{ title }}"

@@ -79,7 +79,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
-  - name: "src"
+  - name: "index"
     label: "Home Page"
     folder: "src"
     create: false

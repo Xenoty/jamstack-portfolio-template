@@ -61,3 +61,12 @@ collections:
         collapsed: true
         widget: "image"
       - { label: "Body", name: "body", widget: "markdown"}
+  - name: "contact"
+    label: "Contact"
+    folder: "src/contact"
+    create: false
+    delete: false
+    slug: "{{ title }}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string"}

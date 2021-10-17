@@ -64,8 +64,6 @@ collections:
   - name: "contact"
     label: "Contact Page"
     folder: "src/contact"
-    extension: "html"
-    format: "json"
     create: false
     delete: false
     slug: "{{ title }}"
@@ -81,7 +79,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
-  - name: "src"
+  - name: "index"
     label: "Home Page"
     folder: "src"
     create: false

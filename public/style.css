@@ -116,6 +116,10 @@ blockquote{
     text-align: center;
 }
 
+.fit-content{
+    min-height:fit-content;
+}
+
 .last-section{
 
 }
@@ -299,14 +303,28 @@ nav .nav-links li{
 }
 
 .hamburger-links li{
-    margin: auto;
+    position: relative;
+    display: block;
 }
 
 .hamburger-links li a{
+    /* font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
     font-size: 20px;
-    margin: auto;
     display: block;
-    width: fit-content;
+    height: 100%;
+    position: relative;
+}
+
+.hamburger-links span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--white);
+    transform: translate(-50%, -50%);
 }
 
 .top-line{
@@ -350,6 +368,11 @@ nav .nav-links li{
     width: fit-content;
     margin: auto;
     text-align: center;
+    max-width: 1000px;
+}
+
+.landing .hero .intro{
+    margin-bottom: 20px;
 }
 
 .landing .avatar{
@@ -362,7 +385,7 @@ nav .nav-links li{
     font-family: Poppins-Light, sans-serif;
     font-weight: 500;
     margin-bottom: unset;
-    line-height: 30px;
+    line-height: 24px;
 }
 
 .landing .call-to-action{
@@ -383,10 +406,10 @@ nav .nav-links li{
 }
 
 .projects{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 4vw;
-    grid-row-gap: 5vh;
+    grid-row-gap: 5vh; */
     margin-bottom: 8vh;
 }
 
@@ -396,8 +419,9 @@ nav .nav-links li{
     display: grid;
     grid-template-columns: .4fr .6fr;
     grid-column-gap: 36px;
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: auto;
+    margin-bottom: 5vh;
 }
 
 .card .content{
@@ -593,8 +617,7 @@ footer .sitemap a{
 .skills-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10vh;
-    grid-row-gap: 4vh;
+    grid-gap: 6vh;
     width: fit-content;
     margin: auto;
 }
@@ -772,6 +795,10 @@ footer .sitemap a{
         display: block;
     }
 
+    footer{
+        padding: 9vh 0;
+    }
+
     .work-content{
         margin-top: 0px !important;
     }
@@ -786,7 +813,7 @@ footer .sitemap a{
 
     .card-cta{
         margin: auto;
-        margin-right: 0;
+        /* margin-right: 0; */
     }
 
     .card-breadcrumbs{

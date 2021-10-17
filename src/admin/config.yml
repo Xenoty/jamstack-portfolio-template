@@ -63,7 +63,8 @@ collections:
       - { label: "Body", name: "body", widget: "markdown"}
   - name: "contact"
     label: "Contact Page"
-    folder: "src/contact"
+    folder: "src/contact/"
+    extension: "html"
     format: "frontmatter"
     create: false
     delete: false

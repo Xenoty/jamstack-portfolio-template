@@ -64,6 +64,7 @@ collections:
   - name: "contact"
     label: "Contact Page"
     folder: "src/contact"
+    format: "frontmatter"
     create: false
     delete: false
     slug: "{{ title }}"

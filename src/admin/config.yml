@@ -15,7 +15,7 @@ collections:
      - label: "Tags"
        name: "tags"
        widget: "select"
-       multiple: true,
+       multiple: true
        options: ["project", "featured"]
        default: ["project"]
      - { label: "Featured Image", name: "image", widget: "image" }

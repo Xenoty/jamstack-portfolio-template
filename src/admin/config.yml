@@ -79,3 +79,14 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+  - name: "src"
+    label: "Home"
+    folder: "src"
+    create: false
+    delete: false
+    slug: "{{ title }}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+      - { label: "Introduction", name: "intro", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "string" }

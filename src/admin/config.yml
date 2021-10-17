@@ -69,4 +69,13 @@ collections:
     slug: "{{ title }}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string"}
+      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+  - name: "work"
+    label: "Work"
+    folder: "src/work"
+    create: false
+    delete: false
+    slug: "{{ title }}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }

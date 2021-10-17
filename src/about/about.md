@@ -1,4 +1,5 @@
 ---
+layout: about.njk
 title: Get to know me
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -6,6 +7,13 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 landingImage: /assets/images/placeholder-image.jpg
 landingImageAlt: placeholder
 metaDescription: I create experiences, get to know me better and what motivates me.
+links:
+  - linkName: LinkedIn
+    url: https://www.example.com
+  - linkName: Resume
+    url: https://www.example.com
+  - linkName: Testing new link
+    url: https://www.example.com
 skills:
   - name: Skill1
     image: https://via.placeholder.com/400
@@ -26,14 +34,6 @@ interests:
   - item: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - item: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - item: Testing new skill
-layout: about.njk
-links:
-  - linkName: LinkedIn
-    url: https://www.example.com
-  - linkName: Resume
-    url: https://www.example.com
-  - linkName: Testing new link
-    url: https://www.example.com
 interestsImage: /assets/projects/placeholder-image.jpg
 ---
 # Heading 1

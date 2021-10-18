@@ -4,8 +4,8 @@ backend:
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
 collections:
-  - name: "project" 
-    label: "List of Projects"
+  - label: "Projects" 
+    name: "project"
     folder: "src/projects" 
     create: true 
     slug: "{{year}}-{{month}}-{{slug}}" 
@@ -23,70 +23,61 @@ collections:
      - { label: "Summary", name: "summary", widget: "string" }
      - { label: "Page Meta Description", name: "metaDescription", widget: "string" }
      - { label: "Body", name: "body", widget: "markdown"}
-  - name: "about"
-    label: "About Page"
-    folder: "src/about"
-    create: false
-    delete: false
-    slug: "{{ title }}"
-    fields: 
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
-      - { label: "Landing Image", name: "landingImage", widget: "image" }
-      - { label: "Landing image desciption", name: "landingImageAlt", widget: "string" }
-      - { label: "Page meta description", name: "metaDescription", widget: "string" }
-      - label: "Links" 
-        name: "links" 
-        widget: "list"
-        collapsed: true
-        fields: 
-          - { label: "Name", name: "linkName", widget: "string" }
-          - { label: "url", name: "url", widget: "string" }
-      - label: "Skills"
-        name: "skills"
-        widget: "list"
-        collapsed: true
-        fields: 
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Image description", name: "imageAlt", widget: "string" }
-      - label : "Interests"
-        name: "interests"
-        widget: "list"
-        collapsed: true
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "index"
+        file: "public/index.json"
         fields:
-          - { label: "Item", name: "item", widget: "string"}
-      - label: "InterestsImage"
-        name: "interestsImage"
-        collapsed: true
-        widget: "image"
-      - { label: "Body", name: "body", widget: "markdown"}
-  - name: "contact"
-    label: "Contact Page"
-    folder: "src/contact"
-    create: false
-    delete: false
-    slug: "{{ title }}"
-    fields: 
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page meta description", name: "metaDescription", widget: "string" }
-  - name: "work"
-    label: "Work Page"
-    folder: "src/work"
-    create: false
-    delete: false
-    slug: "{{ title }}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
-  - name: "index"
-    label: "Home Page"
-    folder: "src"
-    create: false
-    delete: false
-    slug: "{{ title }}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
-      - { label: "Introduction", name: "intro", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+          - { label: "Introduction", name: "intro", widget: "string" }
+          - { label: "Summary", name: "summary", widget: "string" }
+      - label: "Work Page"
+        name: "work"
+        file: "public/work/work.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+      - label: "About Page"
+        name: "about"
+        file: "public/about/about.json"
+        fields: 
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Summary", name: "summary", widget: "string" }
+          - { label: "Landing Image", name: "landingImage", widget: "image" }
+          - { label: "Landing image desciption", name: "landingImageAlt", widget: "string" }
+          - { label: "Page meta description", name: "metaDescription", widget: "string" }
+          - label: "Links" 
+            name: "links" 
+            widget: "list"
+            collapsed: true
+            fields: 
+              - { label: "Name", name: "linkName", widget: "string" }
+              - { label: "url", name: "url", widget: "string" }
+          - label: "Skills"
+            name: "skills"
+            widget: "list"
+            collapsed: true
+            fields: 
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image description", name: "imageAlt", widget: "string" }
+          - label : "Interests"
+            name: "interests"
+            widget: "list"
+            collapsed: true
+            fields:
+              - { label: "Item", name: "item", widget: "string"}
+          - label: "InterestsImage"
+            name: "interestsImage"
+            collapsed: true
+            widget: "image"
+          - { label: "Body", name: "body", widget: "markdown"}
+      - label: "Contact Page"
+        name: "contact"
+        file: "public/contact/contact.json"
+        fields: 
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page meta description", name: "metaDescription", widget: "string" }

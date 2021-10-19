@@ -740,6 +740,45 @@ footer .sitemap a{
 
 /* #endregion */
 
+/* #region 404 */
+
+.not-found-container{
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--secondary-colour);
+}
+
+.not-found{
+    max-width: 500px;
+    min-width: 300px;
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+}
+
+.not-found *{
+    color: var(--white);
+}
+
+.not-found h1{
+    margin-bottom: 7px;
+}
+
+.not-found p{
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+.not-found .btn-primary{
+    margin-top: 5vh;
+}
+
+/* #endregion */
+
 /* #region Media Queries */
 
 @media screen and (max-width:1100px){

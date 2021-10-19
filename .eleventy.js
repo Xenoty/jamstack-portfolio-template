@@ -6,7 +6,6 @@ module.exports = function(eleventyConfig) {
     //#region PassThrough
 
     eleventyConfig.addPassthroughCopy('./src/404.html');
-    eleventyConfig.addPassthroughCopy('./src/netlify.toml');
     eleventyConfig.addPassthroughCopy('./src/style.css');
     eleventyConfig.addPassthroughCopy('./src/main.js');
     eleventyConfig.addPassthroughCopy('./src/assets');

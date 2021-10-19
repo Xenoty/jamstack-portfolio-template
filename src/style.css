@@ -239,6 +239,18 @@ nav {
     z-index: 10;
 }
 
+nav .nav-logo {
+    display: block;
+    line-height: unset;
+    height: var(--nav-height);
+}
+
+nav .nav-logo svg{
+    max-width: 120px;
+    margin: auto;
+    height: var(--nav-height);
+}
+
 nav li a{ 
     font-size: 14px;
     color: var(--white);

@@ -2,7 +2,7 @@
 layout: 'base.njk'
 pagination:
   data: collections.project
-  size: 2
+  size: 4
   reverse: true
 ---
 
@@ -11,52 +11,52 @@ pagination:
         <h1 class="bottom-m-s">All Projects</h1>
     </div>
 
+    <nav aria-labelledby="my-pagination" class="pagination">
+        <ol>
+            <li>
+                {% if page.url != pagination.href.first %}
+                    <a href="{{ pagination.href.first }}">First</a>
+                {% else %}
+                    First
+                {% endif %}
+            </li>
+
+            <li>
+                {% if pagination.href.previous %}
+                    <a href="{{ pagination.href.previous }}"><</a>
+                {% endif %}
+            </li>
+
+            {%- for project in pagination.pages %}
+                <li>
+                    <a href="{{ pagination.hrefs[ loop.index0 ] }}"
+                        {% if page.url == pagination.hrefs[ loop.index0 ] %} 
+                            aria-current="page"
+                        {% endif %}>{{ loop.index }}</a>
+                    </li>
+            {%- endfor %}
+            
+            <li class="pagination-traverse">
+                {% if pagination.href.next %}
+                    <a href="{{ pagination.href.next }}">></a>         
+                {% endif %}
+            </li>
+
+            <li>
+                {% if page.url != pagination.href.last %}
+                    <a href="{{ pagination.href.last }}">Last</a>
+                {% else %}
+                    Last
+                {% endif %}
+            </li>
+        </ol>
+    </nav>
+
     <div class="projects">
 
-        <nav aria-labelledby="my-pagination" class="pagination">
-            <ol>
-                <li>
-                    {% if page.url != pagination.href.first %}
-                        <a href="{{ pagination.href.first }}">First</a>
-                    {% else %}
-                        First
-                    {% endif %}
-                </li>
-
-                <li>
-                    {% if pagination.href.previous %}
-                        <a href="{{ pagination.href.previous }}"><</a>
-                    {% endif %}
-                </li>
-
-                {%- for project in pagination.pages %}
-                    <li>
-                        <a href="{{ pagination.hrefs[ loop.index0 ] }}"
-                            {% if page.url == pagination.hrefs[ loop.index0 ] %} 
-                                aria-current="page"
-                            {% endif %}>{{ loop.index }}</a>
-                        </li>
-                {%- endfor %}
-                
-                <li class="pagination-traverse">
-                    {% if pagination.href.next %}
-                        <a href="{{ pagination.href.next }}">></a>         
-                    {% endif %}
-                </li>
-
-                <li>
-                    {% if page.url != pagination.href.last %}
-                        <a href="{{ pagination.href.last }}">Last</a>
-                    {% else %}
-                        Last
-                    {% endif %}
-                </li>
-            </ol>
-        </nav>
-
-        {# {% for project in pagination.items %}
+        {% for project in pagination.items %}
             {% include 'partials/_project-snippet.njk' %}
-        {% endfor %} #}
+        {% endfor %}
         
     </div>
 

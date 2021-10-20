@@ -245,6 +245,7 @@ input:focus, textarea:focus{
     height: unset;
     z-index: unset;
     color: unset;
+    margin-bottom: 10vh;
 }
 
 .pagination ol{

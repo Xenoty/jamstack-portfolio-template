@@ -71,7 +71,7 @@ blockquote{
 
 [aria-current] {    
     background-color: var(--primary-colour);
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 [aria-current]:hover{
@@ -241,6 +241,10 @@ input:focus, textarea:focus{
 .pagination{
     width: fit-content;
     margin: auto;
+    background-color: unset;
+    height: unset;
+    z-index: unset;
+    color: unset;
 }
 
 .pagination ol{
@@ -253,11 +257,12 @@ input:focus, textarea:focus{
     min-width: 20px;
 }
 
-.pagination li * {
+.pagination li, .pagination li a {
     display: block;
     text-align: center;
     font-size: 20px;
     line-height: inherit;
+    color: unset;
 }
 
 .pagination li a:hover{

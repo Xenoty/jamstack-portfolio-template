@@ -13,7 +13,7 @@ pagination:
 
     <div class="projects">
 
-        <div aria-labelledby="my-pagination" class="pagination">
+        <nav aria-labelledby="my-pagination" class="pagination">
             <ol>
                 <li>
                     {% if page.url != pagination.href.first %}
@@ -52,7 +52,7 @@ pagination:
                     {% endif %}
                 </li>
             </ol>
-        </div>
+        </nav>
 
         {# {% for project in pagination.items %}
             {% include 'partials/_project-snippet.njk' %}

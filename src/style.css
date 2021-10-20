@@ -69,6 +69,61 @@ blockquote{
     padding: 4px 15px;
 }
 
+[aria-current] {    
+    background-color: var(--primary-colour);
+    color: var(--white);
+}
+
+[aria-current]:hover{
+    background-color: var(--primary-colour) !important;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+input, textarea{
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+input{
+    height: fit-content;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 6px 16px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+textarea{
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    border-radius: 2pt;
+    border: 1px solid var(--secondary-colour);
+    outline: none;
+    transition: .1s;
+}
+
+::placeholder{
+    color: var(--placeholder);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--placeholder);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--placeholder);
+}
+
 .spacing{
     margin: 0px 7.5% 0 7.5%;
     max-width:85%
@@ -128,58 +183,16 @@ blockquote{
 
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-input, textarea{
-    border: 1px solid transparent;
-    width: 100%;
-}
-
-input{
-    height: fit-content;
-}
-
-input[type="submit"]{
-    width: 100%;
-    padding: 6px 16px;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-textarea{
-    resize: none;
-}
-
-input:focus, textarea:focus{
-    border-radius: 2pt;
-    border: 1px solid var(--secondary-colour);
-    outline: none;
-    transition: .1s;
-}
-
-::placeholder{
-    color: var(--placeholder);
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: var(--placeholder);
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: var(--placeholder);
-}
-
 .page-link{
     text-align: center;
     text-decoration: underline;
     display: block;
     font-family: Poppins-Light;
     font-size: 16px;
+}
+
+.bottom-m-s{
+    margin-bottom: 4vh;
 }
 
 .bottom-m-l{
@@ -223,6 +236,37 @@ input:focus, textarea:focus{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.pagination{
+    width: fit-content;
+    margin: auto;
+}
+
+.pagination ol{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pagination ol li {
+    min-width: 20px;
+}
+
+.pagination li * {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: inherit;
+}
+
+.pagination li a:hover{
+    background-color: var(--page-bg-colour);
+}
+
+.pagination-traverse{
+    font-size: 40px;
+    line-height: 32px;
 }
 
 /* #endregion */

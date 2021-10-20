@@ -1,17 +1,62 @@
 ---
 layout: 'base.njk'
+pagination:
+  data: collections.project
+  size: 2
+  reverse: true
 ---
 
 <div class="section spacing bottom-m-l top-m-m">
     <div class="title">
-        <h1>All Projects</h1>
+        <h1 class="bottom-m-s">All Projects</h1>
     </div>
 
     <div class="projects">
 
-        {% for project in collections.project | reverse %}
+        <div aria-labelledby="my-pagination" class="pagination">
+            <ol>
+                <li>
+                    {% if page.url != pagination.href.first %}
+                        <a href="{{ pagination.href.first }}">First</a>
+                    {% else %}
+                        First
+                    {% endif %}
+                </li>
+
+                <li>
+                    {% if pagination.href.previous %}
+                        <a href="{{ pagination.href.previous }}"><</a>
+                    {% endif %}
+                </li>
+
+                {%- for project in pagination.pages %}
+                    <li>
+                        <a href="{{ pagination.hrefs[ loop.index0 ] }}"
+                            {% if page.url == pagination.hrefs[ loop.index0 ] %} 
+                                aria-current="page"
+                            {% endif %}>{{ loop.index }}</a>
+                        </li>
+                {%- endfor %}
+                
+                <li class="pagination-traverse">
+                    {% if pagination.href.next %}
+                        <a href="{{ pagination.href.next }}">></a>         
+                    {% endif %}
+                </li>
+
+                <li>
+                    {% if page.url != pagination.href.last %}
+                        <a href="{{ pagination.href.last }}">Last</a>
+                    {% else %}
+                        Last
+                    {% endif %}
+                </li>
+            </ol>
+        </div>
+
+        {# {% for project in pagination.items %}
             {% include 'partials/_project-snippet.njk' %}
-        {% endfor %}
+        {% endfor %} #}
         
     </div>
 

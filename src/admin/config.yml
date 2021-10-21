@@ -31,7 +31,6 @@ collections:
       - label: "Home Page"
         name: "index"
         file: "src/index.json"
-        preview_path: src/
         editor:
           preview: false
         fields:
@@ -50,7 +49,7 @@ collections:
       - label: "About Page"
         name: "about"
         file: "src/about/about.json"
-        preview_path: src/about/
+        preview_path: about/
         fields: 
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Summary", name: "summary", widget: "string" }
@@ -94,7 +93,6 @@ collections:
       - label: "Footer"
         name: "base"
         file: "src/_data/global.json"
-        preview_path: src/
         editor:
           preview: false
         fields: 

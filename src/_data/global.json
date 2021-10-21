@@ -1,0 +1,28 @@
+{
+    "socialLinks" : [
+        {
+            "name" : "LinkedIn",
+            "url" : "https://www.example.com/",
+            "img" : "https://via.placeholder.com/50",
+            "imgAlt" : "Placeholder Image"
+        },
+        {
+            "name" : "Twitter",
+            "url" : "https://www.example.com/",
+            "img" : "https://via.placeholder.com/50",
+            "imgAlt" : "Placeholder Image"
+        },
+        {
+            "name" : "Instagram",
+            "url" : "https://www.example.com/",
+            "img" : "https://via.placeholder.com/50",
+            "imgAlt" : "Placeholder Image"
+        },
+        {
+            "name" : "Behance",
+            "url" : "https://www.example.com/",
+            "img" : "https://via.placeholder.com/50",
+            "imgAlt" : "Placeholder Image"
+        }
+    ]
+}

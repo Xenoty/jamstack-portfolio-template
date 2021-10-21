@@ -29,6 +29,8 @@ collections:
       - label: "Home Page"
         name: "index"
         file: "src/index.json"
+        editor:
+          preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
@@ -37,6 +39,8 @@ collections:
       - label: "Work Page"
         name: "work"
         file: "src/work/work.json"
+        editor:
+          preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
@@ -78,12 +82,16 @@ collections:
       - label: "Contact Page"
         name: "contact"
         file: "src/contact/contact.json"
+        editor:
+          preview: false
         fields: 
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page meta description", name: "metaDescription", widget: "string" }
       - label: "Footer"
         name: "base"
         file: "src/_data/global.json"
+        editor:
+          preview: false
         fields: 
           - label: "Social Links" 
             name: "socialLinks" 

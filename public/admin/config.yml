@@ -81,3 +81,16 @@ collections:
         fields: 
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page meta description", name: "metaDescription", widget: "string" }
+      - label: "Footer"
+        name: "index"
+        file: "src/_data/global.json"
+        fields: 
+          - label: "Social Links" 
+            name: "socialLinks" 
+            widget: "list"
+            collapsed: false
+            fields: 
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Url", name: "url", widget: "string" }
+              - { label: "Icon", name: "img", widget: "image" }
+              - { label: "Icon Alt", name: "imgAlt", widget: "string" }

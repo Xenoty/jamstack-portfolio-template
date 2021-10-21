@@ -82,7 +82,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page meta description", name: "metaDescription", widget: "string" }
       - label: "Footer"
-        name: "index"
+        name: "base"
         file: "src/_data/global.json"
         fields: 
           - label: "Social Links" 

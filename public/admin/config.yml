@@ -46,6 +46,12 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+          - label: "Pagination"
+            name: "pagination"
+            widget: "object"
+            fields:
+              - { label: "Size", name: "size", widget: "number", value_type: "int" }
+              - { label: "Reverse Order", name: "reverse", widget: "boolean", default: true }
       - label: "About Page"
         name: "about"
         file: "src/about/about.json"

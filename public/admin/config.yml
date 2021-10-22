@@ -3,12 +3,14 @@ backend:
   branch: master
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
+publish_mode: editorial_workflow
 collections:
   - label: "Projects" 
     name: "project"
     folder: "src/projects" 
     create: true 
-    slug: "{{year}}-{{month}}-{{slug}}" 
+    slug: "{{year}}-{{month}}-{{slug}}"
+    preview_path: projects/{{slug}}
     fields: 
      - { label: "Title", name: "title", widget: "string" }
      - { label: "Date", name: "date", widget: "datetime" }
@@ -29,6 +31,8 @@ collections:
       - label: "Home Page"
         name: "index"
         file: "src/index.json"
+        editor:
+          preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
@@ -37,12 +41,15 @@ collections:
       - label: "Work Page"
         name: "work"
         file: "src/work/work.json"
+        editor:
+          preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
       - label: "About Page"
         name: "about"
         file: "src/about/about.json"
+        preview_path: about/
         fields: 
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Summary", name: "summary", widget: "string" }
@@ -78,17 +85,31 @@ collections:
       - label: "Contact Page"
         name: "contact"
         file: "src/contact/contact.json"
+        editor:
+          preview: false
         fields: 
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page meta description", name: "metaDescription", widget: "string" }
-      - label: "Footer"
-        name: "base"
+  - label: "General"
+    name: "general"
+    files:
+      - label: "Header"
+        name: "header"
         file: "src/_data/global.json"
+        editor:
+          preview: false
+        fields:
+          - { label: "Logo", name: "logo", widget: "image", choose_url: false }
+      - label: "Footer"
+        name: "footer"
+        file: "src/_data/global.json"
+        editor:
+          preview: false
         fields: 
           - label: "Social Links" 
             name: "socialLinks" 
             widget: "list"
-            collapsed: false
+            collapsed: true
             fields: 
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Url", name: "url", widget: "string" }

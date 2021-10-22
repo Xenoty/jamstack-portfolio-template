@@ -295,7 +295,7 @@ nav .nav-logo {
     height: var(--nav-height);
 }
 
-nav .nav-logo svg{
+nav .nav-logo svg, nav .nav-logo object{
     max-width: 120px;
     margin: auto;
     height: var(--nav-height);

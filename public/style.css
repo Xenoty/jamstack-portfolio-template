@@ -275,6 +275,10 @@ input:focus, textarea:focus{
     line-height: 32px;
 }
 
+.pagination span{
+    margin-left: 20px;
+}
+
 /* #endregion */
 
 /* #region NavigationBar */

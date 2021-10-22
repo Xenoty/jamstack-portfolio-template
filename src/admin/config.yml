@@ -31,6 +31,7 @@ collections:
       - label: "Home Page"
         name: "index"
         file: "src/index.json"
+        preview_path: /
         editor:
           preview: false
         fields:
@@ -41,6 +42,7 @@ collections:
       - label: "Work Page"
         name: "work"
         file: "src/work/work.json"
+        preview_path: work/
         editor:
           preview: false
         fields:
@@ -91,6 +93,7 @@ collections:
       - label: "Contact Page"
         name: "contact"
         file: "src/contact/contact.json"
+        preview_path: contact/
         editor:
           preview: false
         fields: 
@@ -102,6 +105,7 @@ collections:
       - label: "Header & Footer"
         name: "headerFooter"
         file: "src/_data/global.json"
+        preview_path: /
         editor:
           preview: false
         fields:

@@ -14,19 +14,20 @@ collections:
     slug: "{{year}}-{{month}}-{{slug}}"
     preview_path: projects/{{slug}}
     fields: 
-     - { label: "Title", name: "title", widget: "string" }
-     - { label: "Date", name: "date", widget: "datetime" }
+     - { label: "Title", name: "title", widget: "string", hint: "The title of the project. This will also be displayed in the tab name." }
+     - { label: "Date", name: "date", widget: "datetime", hint: "When was the project created?" }
      - label: "Tags"
        name: "tags"
        widget: "select"
+       hint: "All Projects should have 'project'. 'featured' will be displayed on the home page in a snippet."
        multiple: true
        options: ["project", "featured"]
        default: ["project"]
-     - { label: "Thumbnail Image", name: "image", widget: "image" }
-     - { label: "Image caption", name: "imageAlt", widget: "string" }
+     - { label: "Thumbnail Image", name: "image", widget: "image", hint: "The image that will be displayed in the snippet and background." }
+     - { label: "Image caption", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
      - { label: "Summary", name: "summary", widget: "string" }
-     - { label: "Page Meta Description", name: "metaDescription", widget: "string" }
-     - { label: "Body", name: "body", widget: "markdown"}
+     - { label: "Page Meta Description", name: "metaDescription", widget: "string", hint: "Define a description of this web page. This is used in SEO." }
+     - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
   - label: "Pages"
     name: "pages"
     files:
@@ -37,8 +38,8 @@ collections:
         editor:
           preview: false
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", hint: "The text that will be displayed in the tab of the webpage." }
+          - { label: "Page Meta Desciption", name: "metaDescription", widget: "string", hint: "Define a description of this web page. This is used in SEO." }
           - { label: "Introduction", name: "intro", widget: "string", hint: "The first line a user see's when visiting the website." }
           - { label: "Summary", name: "summary", widget: "string", hint: "Try keep it short but effective." }
       - label: "Work Page"
@@ -48,11 +49,12 @@ collections:
         editor:
           preview: false
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page Meta Desciption", name: "metaDescription", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", hint: "The text that will be displayed in the tab of the webpage." }
+          - { label: "Page Meta Desciption", name: "metaDescription", widget: "string", hint: "Define a description of this web page. This is used in SEO." }
           - label: "Pagination"
             name: "pagination"
             widget: "object"
+            hint: "Groups the projects according to how many you want to be displayed at a time."
             fields:
               - { label: "Size", name: "size", required: false, widget: "number", value_type: "int", hint: "The amount of projects you want displayed at a time." }
               - { label: "Reverse Order", required: false, name: "reverse", widget: "boolean", default: true, hint: "Reversing Order displays latest to oldest." }
@@ -61,20 +63,20 @@ collections:
         file: "src/about/about.json"
         preview_path: about/
         fields: 
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Summary", name: "summary", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", hint: "The text that will be displayed in the tab of the webpage." }
+          - { label: "Summary", name: "summary", widget: "string", hint: "This is a short summar about you. Grab the viewer's attention." }
           - { label: "Landing Image", name: "landingImage", widget: "image", hint: "This image will be the landing image for about." }
-          - { label: "Landing image desciption", name: "landingImageAlt", widget: "string" }
-          - { label: "Page meta description", name: "metaDescription", widget: "string" }
+          - { label: "Landing image desciption", name: "landingImageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
+          - { label: "Page meta description", name: "metaDescription", widget: "string", hint: "Define a description of your web page. This is used in SEO." }
           - label: "Links" 
             name: "links" 
             widget: "list"
             collapsed: true
-            hint: "Links to other places e.g. (LinkedIn, Behance, etc.)"
+            hint: "Links to other webpages e.g. (LinkedIn, Behance, etc.)"
             required: false
             fields: 
               - { label: "Name", name: "linkName", widget: "string", hint: "Name of the link you want displayed." }
-              - { label: "url", name: "url", widget: "string" }
+              - { label: "url", name: "url", widget: "string", hint: "The desired link. (e.g. https://www.example.com)" }
           - label: "Skills"
             name: "skills"
             widget: "list"
@@ -82,7 +84,7 @@ collections:
             fields: 
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
-              - { label: "Image description", name: "imageAlt", widget: "string" }
+              - { label: "Image description", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
           - label : "Interests"
             name: "interests"
             widget: "list"
@@ -93,7 +95,7 @@ collections:
             name: "interestsImage"
             collapsed: true
             widget: "image"
-          - { label: "Body", name: "body", widget: "markdown"}
+          - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
       - label: "Contact Page"
         name: "contact"
         file: "src/contact/contact.json"
@@ -101,8 +103,8 @@ collections:
         editor:
           preview: false
         fields: 
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Page meta description", name: "metaDescription", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", hint: "The text that will be displayed in the tab of the webpage." }
+          - { label: "Page meta description", name: "metaDescription", widget: "string", hint: "Define a description of your web page. This is used in SEO." }
   - label: "General"
     name: "general"
     files:
@@ -120,7 +122,7 @@ collections:
             collapsed: true
             hint: "Links displayed at the bottom of the footer under 'Follow Me'."
             fields: 
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Url", name: "url", widget: "string" }
+              - { label: "Name", name: "name", widget: "string", hint: "The visible text you want displayed." }
+              - { label: "Url", name: "url", widget: "string", hint: "The desired link. (e.g. https://www.example.com)"}
               - { label: "Icon", name: "img", widget: "image", hint: "Using .svg files are best for icons." }
-              - { label: "Icon Alt", name: "imgAlt", widget: "string" }
+              - { label: "Icon Alt", name: "imgAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }

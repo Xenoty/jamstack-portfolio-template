@@ -2,6 +2,8 @@
 layout: 'base.njk'
 ---
 
+{% set currentProjectsCount = 0 %}
+
 <div class="section spacing bottom-m-l top-m-m">
     <div class="title">
         <h1 class="bottom-m-s">All Projects</h1>
@@ -46,12 +48,13 @@ layout: 'base.njk'
                 {% endif %}
             </li>
         </ol>
-        <span>({{pagination.size}})</span>
+        <span>({{pagination.length}})</span>
     </nav>
 
     <div class="projects">
 
         {% for project in pagination.items %}
+            {% set currentProjecsCount += 1 %}
             {% include 'partials/_project-snippet.njk' %}
         {% endfor %}
         

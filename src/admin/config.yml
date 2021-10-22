@@ -90,12 +90,16 @@ collections:
         fields: 
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Page meta description", name: "metaDescription", widget: "string" }
-      - label: "Footer"
-        name: "base"
+  - label: "General"
+    name: "general"
+    files:
+      - label: "Header & Footer"
+        name: "headerFooter"
         file: "src/_data/global.json"
         editor:
           preview: false
-        fields: 
+        fields:
+          - { label: "Logo", name: "logo", widget: "image", collapsed: true }
           - label: "Social Links" 
             name: "socialLinks" 
             widget: "list"

@@ -93,19 +93,13 @@ collections:
   - label: "General"
     name: "general"
     files:
-      - label: "Header"
-        name: "baseHeader"
+      - label: "Header & Footer"
+        name: "headerFooter"
         file: "src/_data/global.json"
         editor:
           preview: false
         fields:
-          - { label: "Logo", name: "logo", widget: "image" }
-      - label: "Footer"
-        name: "footer"
-        file: "src/_data/global.json"
-        editor:
-          preview: false
-        fields: 
+          - { label: "Logo", name: "logo", widget: "image", collapsed: true }
           - label: "Social Links" 
             name: "socialLinks" 
             widget: "list"

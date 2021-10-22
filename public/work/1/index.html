@@ -102,8 +102,6 @@
     
     <main>
       
-
-
 <div class="section spacing bottom-m-l top-m-m">
     <div class="title">
         <h1 class="bottom-m-s">All Projects</h1>
@@ -143,20 +141,11 @@
                 
             </li>
         </ol>
+        <span></span>
     </nav>
 
     <div class="projects">
 
-        
-             <div class="card">
-    <img src="/assets/images/placeholder-image.jpg" alt="This is a test">
-    <div class="content">
-        <div class="card-title"><h4>Social Media Creation 4</h4></div>
-        <div class="card-date">01 May 2021</div>
-        <div class="card-breadcrumbs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p></div>
-        <a href="/projects/2021-07-social-media-marketing-for-brandz/" class="card-cta btn-primary">Learn More</a>
-    </div>
-</div>
         
              <div class="card">
     <img src="/assets/images/placeholder-image.jpg" alt="This is a test">
@@ -198,6 +187,8 @@
     if(amountOfCards > 0 && amountOfCards % 2 !== 0){
         $('.projects').children().last().addClass("last-card");
     }
+
+    $(".pagination span").html("(" + amountOfCards + ")");
 </script>
     </main>
     

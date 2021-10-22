@@ -46,6 +46,7 @@ layout: 'base.njk'
                 {% endif %}
             </li>
         </ol>
+        <span></span>
     </nav>
 
     <div class="projects">
@@ -63,4 +64,6 @@ layout: 'base.njk'
     if(amountOfCards > 0 && amountOfCards % 2 !== 0){
         $('.projects').children().last().addClass("last-card");
     }
+
+    $(".pagination span").html("(" + amountOfCards + ")");
 </script>

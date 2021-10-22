@@ -4,6 +4,8 @@ backend:
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
 publish_mode: editorial_workflow
+site_url: https://11ty-portfolio-template.netlify.app/
+logo_url: site_url/assets/images/logoipsum-logo-1.svg
 collections:
   - label: "Projects" 
     name: "project"

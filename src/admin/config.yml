@@ -93,13 +93,13 @@ collections:
   - label: "General"
     name: "general"
     files:
-      - label: "Header"
-        name: "header"
-        file: "src/_data/global.json"
-        editor:
-          preview: false
-        fields:
-          - { label: "Logo", name: "logo", widget: "image", choose_url: false, comment: "Use .svg files for your logos." }
+      # - label: "Header"
+      #   name: "header"
+      #   file: "src/_data/global.json"
+      #   editor:
+      #     preview: false
+      #   fields:
+      #     - { label: "Logo", name: "logo", widget: "image", choose_url: false, comment: "Use .svg files for your logos." }
       - label: "Footer"
         name: "footer"
         file: "src/_data/global.json"

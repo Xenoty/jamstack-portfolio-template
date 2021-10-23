@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - {{ SEO.title }}</title>
+    <meta name="description" CONTENT="{{ SEO.metaDescription }}">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -11,14 +13,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-    <!-- Meta Info --> 
-    <title>John Doe - {{ title }}</title>
-    <meta name="Description" CONTENT="{{ metaDescription }}">
-
     <!-- Preload -->
     <link rel="preload" as="font" crossorigin="anonymous" type="font/ttf" href="/assets/fonts/Poppins-Light.ttf">
     <link rel="preload" as="font" crossorigin="anonymous" type="font/ttf" href="/assets/fonts/Poppins-Medium.ttf">
     <link rel="preload" as="font" crossorigin="anonymous" type="font/ttf" href="/assets/fonts/Poppins-Regular.ttf">
+
+    <!-- Twitter + Open Graph -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="{{ site.authorTwitter }}" />
+    <meta property="og:url" content="{{ site.url ~ page.url }}" />
+    <meta property="og:title" content="{{ SEO.title }}" />
+    <meta property="og:description" content="{{ SEO.metaDescription }}" />
+    <meta property="og:image" content="{{ SEO.metaImage }}" />
 
     <!-- CSS -->
     <link href="/style.css" rel="stylesheet">

@@ -1,11 +1,10 @@
 ---
-title: Social Media Creation 2
+title: "Social Media Creation 2"
 date: 2021-05-01
 tags: ["project", "featured"]
 image: /assets/images/placeholder-image.jpg
 imageAlt: This is a test
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-metaDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
 ---
 
 # Heading 1

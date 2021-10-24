@@ -1,5 +1,6 @@
 {
     "layout" : "contact.njk",
     "title" : "Contact Me",
-    "metaDescription" : "Lets get your idea into action by having a virtual coffee."
+    "summary": "Interested in my work? Lets get your idea to action.",
+    "image": "/assets/images/placeholder-image.jpg"
 }

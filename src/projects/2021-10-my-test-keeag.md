@@ -7,6 +7,5 @@ tags:
 image: /assets/images/placeholder-image.jpg
 imageAlt: cool
 summary: TYhis is sumamry
-metaDescription: "#eete"
 ---
 dasdasddaasdfasdfasdfas

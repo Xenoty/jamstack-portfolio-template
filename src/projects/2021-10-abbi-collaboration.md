@@ -7,7 +7,6 @@ tags:
 image: /assets/images/placeholder-image.jpg
 imageAlt: This is atest
 summary: Collaboration with an awesome person
-metaDescription: Awesome project
 ---
 
 

@@ -7,7 +7,6 @@ tags:
 image: /assets/images/placeholder-image.jpg
 imageAlt: This is a test project
 summary: Testing the publishing feature with netlify CMS
-metaDescription: This is the Meta description
 ---
 # This is Heading 1
 

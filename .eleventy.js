@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+// const yaml = require("js-yaml");
 // const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
@@ -22,11 +23,9 @@ module.exports = function(eleventyConfig) {
 
     //#endregion
 
-    //#region plugins
+    //#region Extensions
 
-    //  eleventyConfig.addPlugin(syntaxHighlight, {
-    //     trim: true,
-    // });
+    // eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
     //#endregion
 

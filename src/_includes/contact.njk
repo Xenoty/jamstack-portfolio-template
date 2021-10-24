@@ -1,10 +1,15 @@
 ---
 layout: 'base.njk'
+eleventyComputed:
+  SEO: 
+    metaTitle: "{{title}}"
+    metaDescription: "{{summary}}"
+    metaImage: "{{image}}"
 ---
 <div class="section contact-page spacing top-m-s full-page">
 
     <div class="title">
-        <h1>Interested in my work? Contact me below, its free...</h1>
+        <h1>{{ summary }}</h1>
     </div>
 
     {% include 'partials/_contact-form.njk' %}

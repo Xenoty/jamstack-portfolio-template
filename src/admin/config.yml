@@ -26,7 +26,6 @@ collections:
      - { label: "Thumbnail Image", name: "image", widget: "image", hint: "The image that will be displayed in the snippet and background." }
      - { label: "Image caption", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
      - { label: "Summary", name: "summary", widget: "string" }
-     - { label: "Page Meta Description", name: "metaDescription", widget: "string", hint: "Define a description of this web page. This is used in SEO." }
      - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
   - label: "Pages"
     name: "pages"
@@ -39,9 +38,10 @@ collections:
           preview: false
         fields:
           - { label: "Title", name: "title", widget: "string", hint: "The text that will be displayed in the tab of the webpage." }
-          - { label: "Page Meta Desciption", name: "metaDescription", widget: "string", hint: "Define a description of this web page. This is used in SEO." }
           - { label: "Introduction", name: "intro", widget: "string", hint: "The first line a user see's when visiting the website." }
           - { label: "Summary", name: "summary", widget: "string", hint: "Try keep it short but effective." }
+          - { label: "Landing Image", name: "landingImage", widget: "image", hint: "The image that will be displayed on your landing page." }
+          - { label: "Landing Alt", name: "landingImageAlt", widget: "string", hint: "Text that will be dispalyed when the image doesn't load." }
       - label: "Work Page"
         name: "work"
         file: "src/work/work.json"
@@ -50,7 +50,8 @@ collections:
           preview: false
         fields:
           - { label: "Title", name: "title", widget: "string", hint: "The text that will be displayed in the tab of the webpage." }
-          - { label: "Page Meta Desciption", name: "metaDescription", widget: "string", hint: "Define a description of this web page. This is used in SEO." }
+          - { label: "Summary", name: "summary", widget: "string", hint: "Define a description of this web page. This is used in SEO." }
+          - { label: "Image", name: "image", widget: "image", hint: "Image to be displayed when sharing a link to your website." }
           - label: "Pagination"
             name: "pagination"
             widget: "object"
@@ -67,7 +68,6 @@ collections:
           - { label: "Summary", name: "summary", widget: "string", hint: "This is a short summar about you. Grab the viewer's attention." }
           - { label: "Landing Image", name: "landingImage", widget: "image", hint: "This image will be the landing image for about." }
           - { label: "Landing image desciption", name: "landingImageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
-          - { label: "Page meta description", name: "metaDescription", widget: "string", hint: "Define a description of your web page. This is used in SEO." }
           - label: "Links" 
             name: "links" 
             widget: "list"
@@ -104,7 +104,8 @@ collections:
           preview: false
         fields: 
           - { label: "Title", name: "title", widget: "string", hint: "The text that will be displayed in the tab of the webpage." }
-          - { label: "Page meta description", name: "metaDescription", widget: "string", hint: "Define a description of your web page. This is used in SEO." }
+          - { label: "Summary", name: "summary", widget: "string", hint: "This will be displayed above your contact form. This is also used to describe the website for SEO." }
+          - { label: "Image", name: "image", widget: "image", hint: "Image you want to be displayed when sharing a link to this page." }
   - label: "General"
     name: "general"
     files:

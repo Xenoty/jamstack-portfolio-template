@@ -1,11 +1,11 @@
 ---
 layout: 'base.njk'
+eleventyComputed:
+  SEO: 
+    metaTitle: "{{title}}"
+    metaDescription: "{{summary}}"
+    metaImage: "{{image}}"
 ---
-
-{% set metaTitle = title %}
-{% set metaDescription = summary %}
-{% set metaImage = image %}
-
 
 <img class="work-bg-img" src="{{ image }}" alt="{{ imageAlt}}">
 <div class="section spacing full-page top-p-m">

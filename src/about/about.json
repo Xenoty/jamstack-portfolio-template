@@ -4,11 +4,6 @@
   "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
   "landingImage": "/assets/images/placeholder-image.jpg",
   "landingImageAlt": "placeholder",
-  "SEO" : {
-    "metaTitle": "Get to know me",
-    "metaDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
-    "metaImage": "/assets/images/placeholder-image.jpg"
-  },
   "links":[
       { 
         "linkName": "LinkedIn",

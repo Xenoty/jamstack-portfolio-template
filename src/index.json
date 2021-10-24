@@ -1,12 +1,8 @@
 { 
     "layout": "home.njk",
+    "title": "Portfolio Website",
     "intro": "Hi, my name is John Doe",
     "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "landingImage" : "https://via.placeholder.com/1200",
-    "landingImageAlt": "This is alt text",
-    "SEO" : {
-        "metaTitle": "Portfolio Website",
-        "metaDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "metaImage" : "https://via.placeholder.com/1200"
-    }
+    "landingImageAlt": "This is alt text"
 }

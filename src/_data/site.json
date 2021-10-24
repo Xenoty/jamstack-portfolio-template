@@ -1,5 +1,7 @@
 {
-  "site_url" : "https://11ty-portfolio-template.netlify.app/",
+  "author" : "John Doe",
+  "authorTwitter" : "@johndoe",
+  "url" : "https://11ty-portfolio-template.netlify.app",
   "logo" : "/assets/images/logoipsum-logo-1.svg",
   "socialLinks": [
     {

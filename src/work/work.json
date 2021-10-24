@@ -2,7 +2,7 @@
   "layout": "work.njk",
   "title": "Latest Projects",
   "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-  "image": "assets/images/placeholder-image.jpg",
+  "image": "/assets/images/placeholder-image.jpg",
   "pagination": {
     "data": "collections.project",
     "size": 5,

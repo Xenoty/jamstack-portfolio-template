@@ -26,7 +26,6 @@ collections:
      - { label: "Thumbnail Image", name: "image", widget: "image", hint: "The image that will be displayed in the snippet and background." }
      - { label: "Image caption", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
      - { label: "Summary", name: "summary", widget: "string" }
-     - { label: "Page Meta Description", name: "metaDescription", widget: "string", hint: "Define a description of this web page. This is used in SEO." }
      - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
   - label: "Pages"
     name: "pages"
@@ -112,11 +111,14 @@ collections:
     files:
       - label: "Header & Footer"
         name: "headerFooter"
-        file: "src/_data/global.json"
+        file: "src/_data/site.json"
         preview_path: /
         editor:
           preview: false
         fields:
+          - { label: "Author", name: "author", widget: "string", hint: "Author of the website." }
+          - { label: "Author Twitter", name: "authorTwitter", widget: "string", hint: "Your twitter handle." }
+          - { label: "Site url", name: "url", widget: "string", hint: "The entire url to the website." }
           - { label: "Logo", name: "logo", widget: "image", collapsed: true, hint: "The logo displayed in the navigation bar." }
           - label: "Social Links" 
             name: "socialLinks" 

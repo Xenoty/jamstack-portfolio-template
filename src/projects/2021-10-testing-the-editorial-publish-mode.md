@@ -6,7 +6,6 @@ tags:
 image: /assets/images/placeholder-image.jpg
 imageAlt: Testing
 summary: Testing the editorial publish mode on Netlify CMS
-metaDescription: This is a test
 ---
 # Heading 1
 

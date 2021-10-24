@@ -1,10 +1,14 @@
 {
+  "layout": "work.njk",
+  "title": "Latest Projects",
   "pagination": {
     "data": "collections.project",
     "size": 5,
     "reverse": true
   },
-  "layout": "work.njk",
-  "title": "Latest Projects",
-  "metaDescription": "View my latest projects which includes a variety of clients."
+  "SEO" : {
+    "metaTitle" : "Latest Projects",
+    "metaDescription": "View my latest projects which includes a variety of clients.",
+    "metaImage" : ""
+  }
 }

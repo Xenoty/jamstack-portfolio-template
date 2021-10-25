@@ -1,10 +1,15 @@
 ---
 layout: 'base.njk'
 eleventyComputed:
+  pageUrl: "{{page.url}}"
   SEO: 
     metaTitle: "{{title}}"
     metaDescription: "{{summary}}"
     metaImage: "{{landingImage}}"
+tags: 
+ - nav
+pageName: "Home"
+date: 2021-01-01
 ---
 
 <div class="section landing">

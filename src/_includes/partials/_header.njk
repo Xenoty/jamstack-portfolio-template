@@ -12,16 +12,7 @@
             </div>
             <ul class="nav-links">
 
-                {% for nav in collections.nav %}
-                     <li>
-                        <a href="{{nav.data.pageUrl}}" 
-                        {% if page.url == nav.data.pageUrl %} 
-                           aria-current="page"
-                        {% endif %}>
-                            {{nav.data.pageName}}
-                        </a>
-                    </li>
-                {% endfor %}
+                {% include 'partials/_site-links.njk' %}
 
             </ul>
 

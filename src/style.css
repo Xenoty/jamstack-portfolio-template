@@ -330,12 +330,12 @@ nav .nav-links li{
     margin-right: 20px;
 }
 
-nav .nav-links [aria-current]{
+nav .nav-links [aria-current], footer [aria-current]{
     background-color: unset !important;
     text-decoration: underline !important;
 }
 
-nav .nav-links [aria-current]:hover{
+nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
     background-color: unset !important;
     text-decoration: underline !important;
 }

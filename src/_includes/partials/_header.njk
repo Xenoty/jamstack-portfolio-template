@@ -1,6 +1,8 @@
 <header>
     <nav>
-        <div class="spacing">    
+        <div class="spacing"> 
+
+             <!-- Desktop nav-->   
             <div class="nav-main">
                 <li>
                     <a href="/" class="nav-logo">
@@ -9,28 +11,21 @@
                 </li>
             </div>
             <ul class="nav-links">
-                <li>
-                    <a href="/">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="/work/">
-                        Work
-                    </a>
-                </li>
-                <li>
-                    <a href="/about/">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="/contact/">
-                        Contact
-                    </a>
-                </li>
+
+                {% for nav in collections.nav %}
+                     <li>
+                        <a href="{{nav.data.pageUrl}}" 
+                        {% if page.url == nav.data.pageUrl %} 
+                           aria-current="page"
+                        {% endif %}>
+                            {{nav.data.pageName}}
+                        </a>
+                    </li>
+                {% endfor %}
+
             </ul>
 
+            <!-- Mobile nav-->
             <div class="hamburger">
                 <div class="hamburger-icon" onclick="ToggleHamburger('.hamburger-content')">
                     <div class="line top-line"></div>
@@ -40,26 +35,18 @@
 
                 <div class="hamburger-content">
                     <ul class="hamburger-links">
-                        <li>
-                            <a href="/">
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/work/">
-                                <span>Work</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/about/">
-                                <span>About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/contact/">
-                                <span>Contact</span>
-                            </a>
-                        </li>
+
+                         {% for nav in collections.nav %}
+                            <li>
+                                <a href="{{nav.data.pageUrl}}" 
+                                {% if page.url == nav.data.pageUrl %} 
+                                aria-current="page"
+                                {% endif %}>
+                                    <span>{{nav.data.pageName}}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                        
                     </ul>
                 </div>
             </div>

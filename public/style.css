@@ -5,6 +5,7 @@
 :root{
     --primary-colour: #F0544F;
     --secondary-colour: #113537;
+    --secondary-dark: #0e292a;
     --text-colour:#113537;
     --white:#ffff;
     --page-bg-colour: #E6E6E6;
@@ -18,10 +19,11 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: var(--secondary-colour);
 }
 
 h1, h2, h3, h4, h5, h6{
-    color: var(--h1);
+    color: var(--white);
 }
 
 h1{
@@ -36,7 +38,7 @@ h1{
     margin: 0;
     padding: 0;
     font-family: Poppins-Regular, sans-serif;
-    color: var(--secondary-colour);
+    color: var(--white);
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -65,7 +67,7 @@ table{
 }
 
 blockquote{
-    background-color: whitesmoke;
+    background-color: var(--secondary-dark);
     padding: 4px 15px;
 }
 
@@ -422,7 +424,7 @@ nav .nav-links li{
 /* #region Landing */
 
 .landing{
-    background-color: var(--page-bg-colour);
+    background-color: var(--secondary-colour);
     margin-top: calc(-1 * var(--nav-height));
 }
 
@@ -486,14 +488,12 @@ nav .nav-links li{
 }
 
 .card{
-    width: 100%;
-    /* border: 2px solid red; */
     display: grid;
-    grid-template-columns: .4fr .6fr;
+    grid-template-columns: .5fr .5fr;
     grid-column-gap: 36px;
-    /* max-width: 600px; */
     margin: auto;
     margin-bottom: 5vh;
+    max-width: 1000px;
 }
 
 .card .content{
@@ -593,7 +593,7 @@ nav .nav-links li{
 
 footer {
     padding: 3vh 0;
-    background-color: var(--secondary-colour);
+    background-color: var(--secondary-dark);
 }
 
 footer * {
@@ -662,8 +662,8 @@ footer .sitemap a{
 
 .about-links{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vh;
     max-width: 150px;
 }
 

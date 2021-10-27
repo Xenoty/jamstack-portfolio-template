@@ -1,29 +1,30 @@
 <footer>
-    <div class="copy-right">
-        <p>Copyright @{{ utils.currentYear() }} John Doe</p>
-    </div>
-    <div class="footer-links">
-        <div class="social-media">
-            <div class="footer-category-title">
-                <p>Follow Me</p>
-            </div>
-
-            {% for item in site.socialLinks %}
-                <div class="footer-link">
-                    <img src="{{ item.img }}" alt="{{ item.imgAlt }}">
-                    <a href="{{ item.url }}">{{ item.name }}</a>
-                </div>
-            {% endfor %}
-            
+    <div class="spacing">
+        <div class="copy-right">
+            <p>Copyright @{{ utils.currentYear() }} {{site.author}}</p>
         </div>
-        <div class="sitemap">
-            <div class="footer-category-title">
-                <p>Sitemap</p>
+        <div class="footer-links">
+            <div class="social-media">
+                <div class="footer-category-title">
+                    <p>Follow Me</p>
+                </div>
+
+                {% for item in site.socialLinks %}
+                    <div class="footer-link">
+                        <img src="{{ item.img }}" alt="{{ item.imgAlt }}">
+                        <a href="{{ item.url }}">{{ item.name }}</a>
+                    </div>
+                {% endfor %}
+                
             </div>
-            <a href="/">Home</a>
-            <a href="/work/">Work</a>
-            <a href="/about/">About</a>
-            <a href="/contact/">Contact</a>
+            <div class="sitemap">
+                <div class="footer-category-title">
+                    <p>Sitemap</p>
+                </div>
+
+                {% include 'partials/_site-links.njk' %}
+
+            </div>
         </div>
     </div>
 </footer>

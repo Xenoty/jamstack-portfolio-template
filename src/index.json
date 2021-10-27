@@ -3,6 +3,6 @@
     "title": "Portfolio Website",
     "intro": "Hi, my name is John Doe",
     "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "landingImage" : "https://via.placeholder.com/1200",
+    "landingImage" : "/assets/images/pexels-kampus-production-7893740-compressed.jpg",
     "landingImageAlt": "This is alt text"
 }

@@ -441,6 +441,7 @@ nav .nav-links li{
 
 .landing .hero .intro{
     margin-bottom: 20px;
+    font-size: 22px;
 }
 
 .landing .avatar{
@@ -494,10 +495,13 @@ nav .nav-links li{
     margin: auto;
     margin-bottom: 5vh;
     max-width: 1000px;
+    box-shadow: 0px 0px 9px 4px rgb(0 0 0 / 46%);
+    background-color: var(--secondary-dark);
 }
 
 .card .content{
     text-align: left;
+    padding: 2vh;
 }
 
 .content * {

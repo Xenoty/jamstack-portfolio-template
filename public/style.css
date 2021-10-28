@@ -696,9 +696,8 @@ footer .sitemap a{
 
 .about-links{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 2vh;
-    max-width: 150px;
 }
 
 .intro-meta{
@@ -717,6 +716,8 @@ footer .sitemap a{
 .about-links a span{
     position: absolute;
     right: 10px;
+    transform: translateY(-55%);
+    top: 50%;
 }
 
 .skills-container{

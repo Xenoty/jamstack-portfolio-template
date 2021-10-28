@@ -107,7 +107,7 @@ input[type="submit"]{
 }
 
 textarea{
-    resize: none;
+    resize: vertical;
 }
 
 input:focus, textarea:focus{
@@ -175,6 +175,7 @@ input:focus, textarea:focus{
     text-align: center;
     width: fit-content;
     margin: auto;
+    max-width: 700px
 }
 
 .fit-content{
@@ -580,9 +581,6 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 /* #region Contact-section */
 
 .contact-page .title {
-    max-width: 37vw;
-    min-width: 20em;
-    margin: auto;
     margin-bottom: 9vh;
 }
 
@@ -594,7 +592,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .contact-detail *{
-    display: block;
+    /* display: block; */
 }
 
 .contact-detail{
@@ -603,6 +601,12 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .contact-detail label{
     margin-bottom: 3px;
+    display: inline-block;
+}
+
+.contact-detail label span{
+    color: red;
+    margin-right: 5px;
 }
 
 .contact-detail input{

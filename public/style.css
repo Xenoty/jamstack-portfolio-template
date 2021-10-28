@@ -290,6 +290,10 @@ input:focus, textarea:focus{
     border-radius: 7px;
 }
 
+.border-round-lrg{
+    border-radius: 25px;
+}
+
 .border-solid{
     border: .05px solid var(--white);
 }
@@ -693,10 +697,14 @@ footer .sitemap a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     margin-top: 20vh;
     position: relative;
+}
+
+.about-grid img{
+    max-height: 500px;
 }
 
 .about-links{
@@ -726,34 +734,41 @@ footer .sitemap a{
 }
 
 .skills-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 6vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-row-gap: 6vh;
+    grid-column-gap: 4vh;
     width: fit-content;
     margin: auto;
+    max-width: 1100px;
 }
 
 .skill-card{
     position: relative;
-    max-width: 250px;
-    min-height: 250px;
+    max-width: 150px;
+    min-height: 150px;
+    box-shadow: 1px 3.5px 6px 1px rgb(0 0 0 / 17%);
+    background-color: var(--secondary-dark);
 }
 
 .skill-card p{
     position: absolute;
-    top: 10px;
+    top: -18px;
     width: fit-content;
     left: 50%;
-    transform: translate(-50%, 10px);
-    font-size: 20px;
+    transform: TranslateX(-50%);
+    font-size: 16px;
     padding: 0 20px;
     text-align: center;
+    line-height: 20px;
 }
 
-.skill-card img{
+/* .skill-card img{
     border-radius: 25px;
     box-shadow: 1px 3.5px 6px 1px rgb(0 0 0 / 17%);
-}
+} */
 
 .interests-list{
     display: grid;
@@ -946,8 +961,18 @@ footer .sitemap a{
 }
 
 @media screen and (max-width:900px){
+
+    .skills-container{
+        grid-gap: 7vw;
+    }
+
     .skill-card{
-        min-height: unset;
+        min-height: 115px;
+        max-width: 115px;
+    }
+
+    footer .footer-links{
+        grid-column-gap: 5vw;
     }
 }
 
@@ -992,10 +1017,8 @@ footer .sitemap a{
 
     .about-links{
         /* margin: auto; */
-    }
-
-    .skills-container{
-        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        width: fit-content;
     }
 
     .interests-list{

@@ -19,7 +19,8 @@ date: 2021-03-01
 
     <div class="about-grid">
         <img src="{{ landingImage }}" 
-             alt="{{ landingImageAlt }}">
+             alt="{{ landingImageAlt }}"
+             class="border-round-lrg">
         <div class="about-intro">
             <p class="intro-meta">
                {{ summary }}
@@ -46,10 +47,11 @@ date: 2021-03-01
         <div class="skills-container">
 
             {% for skill in skills %}
-                <div class="skill-card">
+                <div class="skill-card border-round-lrg">
                     <p>{{ skill.name }}</p>
                     <img src="{{ skill.image }}" 
-                         alt="{{ skill.imageAlt }}">
+                         alt="{{ skill.imageAlt }}"
+                         class="border-round-lrg">
                 </div>
             {% endfor %}
             

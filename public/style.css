@@ -90,6 +90,7 @@ img {
 input, textarea{
     border: 1px solid transparent;
     width: 100%;
+    color: black;
 }
 
 input{
@@ -102,6 +103,7 @@ input[type="submit"]{
     border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
+    margin-top: 3vh;
 }
 
 textarea{
@@ -109,7 +111,6 @@ textarea{
 }
 
 input:focus, textarea:focus{
-    border-radius: 2pt;
     border: 1px solid var(--secondary-colour);
     outline: none;
     transition: .1s;

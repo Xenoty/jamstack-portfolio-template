@@ -32,6 +32,7 @@ h1{
     margin-bottom: 9vh;
     line-height: 42px;
     font-weight: 500;
+    position: relative;
 }
 
 *{
@@ -169,8 +170,10 @@ input:focus, textarea:focus{
     position: relative;
 }
 
-.section .title{
+.title{
     text-align: center;
+    width: fit-content;
+    margin: auto;
 }
 
 .fit-content{
@@ -287,6 +290,15 @@ input:focus, textarea:focus{
 
 .border-solid{
     border: .05px solid var(--white);
+}
+
+.bullet-point{
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-colour);
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 /* #endregion */
@@ -727,6 +739,9 @@ footer .sitemap a{
     width: fit-content;
     left: 50%;
     transform: translate(-50%, 10px);
+    font-size: 20px;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .skill-card img{

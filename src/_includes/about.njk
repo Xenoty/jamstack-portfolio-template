@@ -27,7 +27,7 @@ date: 2021-03-01
             <div class="about-links">
                 {% for item in links %}
                     <a href="{{ item.url }}" 
-                      class="border-round-sm border-solid"> 
+                      class="border-round-sm btn-primary"> 
                       {{ item.linkName }} 
                       <span>&#8594;</span>
                     </a>
@@ -65,7 +65,7 @@ date: 2021-03-01
     <div class="interests-list">                    
         <ul>
             {% for interest in interests %}
-                <li>{{ interest.item }}</li>
+                <li><span class="bullet-point"></span>{{ interest.item }}</li>
             {% endfor %}
         </ul>
         <img src="https://via.placeholder.com/600" alt="placeholderImage">

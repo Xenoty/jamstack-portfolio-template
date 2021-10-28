@@ -3,7 +3,7 @@ title: Testing the editorial publish mode
 date: 2021-10-21T17:28:29.773Z
 tags:
   - project
-image: /assets/images/placeholder-image.jpg
+image: /assets/images/pexels-lisa-2374794.jpg
 imageAlt: Testing
 summary: Testing the editorial publish mode on Netlify CMS
 ---

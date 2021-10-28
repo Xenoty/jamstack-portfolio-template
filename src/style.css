@@ -535,6 +535,10 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
     background-color: var(--secondary-dark);
 }
 
+.projects .card img{
+    height: 290px;
+}
+
 .card .content{
     text-align: left;
     padding: 2vh;

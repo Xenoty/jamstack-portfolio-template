@@ -876,6 +876,10 @@ footer .sitemap a{
     margin: 15px auto;
 }
 
+.work-content{
+    min-height: unset !important;
+}
+
 /* #endregion */
 
 /* #region 404 */

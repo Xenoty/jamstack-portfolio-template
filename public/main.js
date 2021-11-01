@@ -1,23 +1,5 @@
 const mainTag = document.getElementsByTagName("main");
 
-function ShowCardRow(){
-    $('.projects').removeClass("projects-grid");
-    $('.card').removeClass("card-grid");
-    $('.card-title').removeClass('card-title-grid');
-    $('.card-breadcrumbs').removeClass('card-breadcrumbs-grid');
-    $('#featured_row').addClass('active-layout');
-    $('#featured_grid').removeClass('active-layout');
-}
-
-function ShowCardGrid(){
-    $('.projects').addClass("projects-grid");
-    $('.card').addClass("card-grid");
-    $('.card-title').addClass('card-title-grid');
-    $('.card-breadcrumbs').addClass('card-breadcrumbs-grid');
-    $('#featured_row').removeClass('active-layout');
-    $('#featured_grid').addClass('active-layout');
-}
-
 function InsertComponents(){
     $.get("../components/nav.html", function(data){
         $("header").replaceWith(data);

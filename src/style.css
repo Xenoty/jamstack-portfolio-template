@@ -600,58 +600,6 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
     grid-column-end: 3;
 }
 
-.projects-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr !important;
-    grid-column-gap: 4vw !important;
-}
-
-.card-grid{
-    grid-column-gap: 0 !important;
-    min-height: 250px !important;
-    max-height: 290px !important;
-    width: 100%;
-}
-
-.card-title-grid{
-    margin-bottom: 10px !important;
-    margin-top: 0px !important;
-}
-
-.card-breadcrumbs-grid{
-    overflow: hidden;
-    max-height: 95px;
-    min-height: 95px;
-}
-
-.projects-layout{
-    cursor: pointer;
-    float: right;
-    padding: 4px;
-    padding-bottom: 0px;
-    margin-right: 5px;
-}
-
-.projects-layout:hover{
-    background-color: #f0544f59;
-}
-
-.projects-layout svg{
-    max-width: 40px;
-    height: fit-content;
-}
-
-.projects-layout-container{
-    max-width: 1000px;
-    overflow: auto;
-    margin: auto;
-    margin-bottom: 2vh;
-}
-
-.active-layout{
-    background-color: var(--primary-colour) !important;
-}
-
 /*#endregion*/
 
 /* #region Contact-section */

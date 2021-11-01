@@ -21,9 +21,9 @@ date: 2021-02-01
         <ol>
             <li>
                 {% if page.url != pagination.href.first %}
-                    <a href="{{ pagination.href.first }}">First</a>
+                    <a href="{{ pagination.href.first }}"><<</a>
                 {% else %}
-                    First
+                    <<
                 {% endif %}
             </li>
 
@@ -50,9 +50,9 @@ date: 2021-02-01
 
             <li>
                 {% if page.url != pagination.href.last %}
-                    <a href="{{ pagination.href.last }}">Last</a>
+                    <a href="{{ pagination.href.last }}">>></a>
                 {% else %}
-                    Last
+                    >>
                 {% endif %}
             </li>
         </ol>

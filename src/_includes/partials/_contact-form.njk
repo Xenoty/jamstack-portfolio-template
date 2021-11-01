@@ -1,21 +1,21 @@
 <form name="contact-form" method="POST" data-netlify="true" class="contact-form">
     <div class="contact-detail">
         <label for="name">
-            Name
+            <span>*</span>Name
         </label>
-        <input name="name" type="text" placeholder="John Doe">
+        <input name="name" type="text" required placeholder="John Doe" class="border-round-sm">
     </div>
     <div class="contact-detail">
         <label for="email">
-            Email
+            <span>*</span>Email
         </label>
-        <input name="email" type="email" placeholder="example@domain.com">
+        <input name="email" type="email" required placeholder="example@domain.com" class="border-round-sm">
     </div>
     <div class="contact-detail">
         <label for="message">
             Message
         </label>
-        <textarea name="message" rows="4" placeholder="Enter message here..."></textarea>
+        <textarea name="message" rows="4" placeholder="Enter message here..." class="border-round-sm"></textarea>
     </div>
     <input type="submit" value="Get in Touch" class="btn-primary">
 </form>

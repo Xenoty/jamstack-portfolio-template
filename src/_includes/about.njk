@@ -19,7 +19,8 @@ date: 2021-03-01
 
     <div class="about-grid">
         <img src="{{ landingImage }}" 
-             alt="{{ landingImageAlt }}">
+             alt="{{ landingImageAlt }}"
+             class="border-round-lrg">
         <div class="about-intro">
             <p class="intro-meta">
                {{ summary }}
@@ -27,7 +28,7 @@ date: 2021-03-01
             <div class="about-links">
                 {% for item in links %}
                     <a href="{{ item.url }}" 
-                      class="btn-primary bg-white font-italics"> 
+                      class="border-round-sm btn-primary"> 
                       {{ item.linkName }} 
                       <span>&#8594;</span>
                     </a>
@@ -43,17 +44,22 @@ date: 2021-03-01
     </div>
 
     <div class="skills">
+        {% if skills.length < 0 %}
+                <h2 class="alert">
+                    Comming Soon!
+                </h2>
+        {% else %}
         <div class="skills-container">
-
-            {% for skill in skills %}
-                <div class="skill-card">
-                    <p>{{ skill.name }}</p>
-                    <img src="{{ skill.image }}" 
-                         alt="{{ skill.imageAlt }}">
-                </div>
-            {% endfor %}
-            
-        </div>
+                {% for skill in skills %}
+                    <div class="skill-card border-round-lrg">
+                        <p>{{ skill.name }}</p>
+                        <img src="{{ skill.image }}" 
+                            alt="{{ skill.imageAlt }}"
+                            class="border-round-lrg">
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
     </div>
 </div>
 
@@ -62,13 +68,18 @@ date: 2021-03-01
         <h1>Interests</h1>
     </div>
 
-    <div class="interests-list">                    
+    <div class="interests-list" 
+    {% if interestsImage == "" %}
+        style="grid-template-columns:1fr;width: fit-content;"
+    {% endif %}>                    
         <ul>
             {% for interest in interests %}
-                <li>{{ interest.item }}</li>
+                <li><span class="bullet-point"></span>{{ interest.item }}</li>
             {% endfor %}
         </ul>
-        <img src="https://via.placeholder.com/600" alt="placeholderImage">
+        {% if interestsImage != "" %}
+            <img src="{{ interestsImage }}" alt="placeholderImage">
+        {% endif %}
     </div>
 </div>
 

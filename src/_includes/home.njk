@@ -17,10 +17,10 @@ date: 2021-01-01
         <div class="avatar">
             <img src="{{ landingImage }}" alt="{{ landingImageAlt }}"> 
         </div>
-        <h1 class="intro">    
+        <h1 class="intro spacing">    
             {{ intro }}
         </h1>
-        <h1 class="short-summary">
+        <h1 class="short-summary spacing">
             {{ summary }}
         </h1>
 
@@ -38,14 +38,22 @@ date: 2021-01-01
 
     <div class="projects">
 
-        {% for project in collections.featured | reverse %}
-            {% include 'partials/_project-snippet.njk' %}
-        {% endfor %}
+        {% if collections.featured.length < 0 %}
+            {# TODO #}
+            <h2 class="alert">
+                Comming Soon! Watch this space 👀
+            </h2>
+        {% else %}
+            {% for project in collections.featured | reverse %}
+                {% include 'partials/_project-snippet.njk' %}
+            {% endfor %}
+        {% endif %}
         
     </div>
 
     <a class="page-link" href="/work/">All Projects <span>&#8594;</span></a>
 </div>
+
 
 <div class="section contact-page spacing last-section top-m-l">
     <div class="title">

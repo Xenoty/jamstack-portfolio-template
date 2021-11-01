@@ -2,7 +2,7 @@
   "layout": "about.njk",
   "title": "Get to know me",
   "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
-  "landingImage": "/assets/images/placeholder-image.jpg",
+  "landingImage": "/assets/images/pexels-spencer-selover-590139-compressed.jpg",
   "landingImageAlt": "placeholder",
   "links":[
       { 
@@ -20,23 +20,33 @@
     ],
   "skills":[
       { 
-        "name": "Skill1",
-        "image": "https://via.placeholder.com/400",
+        "name": "React",
+        "image": "/assets/images/320px-React-icon.svg.png",
         "imageAlt": "Image description here"
       },
       {
-        "name": "Skill2",
-        "image": "https://via.placeholder.com/400",
+        "name": "Javascript",
+        "image": "/assets/images/600px-JavaScript-logo.png",
         "imageAlt": "Image description here"
       },
       {
-        "name": "Skill3",
-        "image": "https://via.placeholder.com/400",
+        "name": "CSharp",
+        "image": "/assets/images/csharp-logo.png",
         "imageAlt": "Image description here"
       },
       {
-        "name": "Testing new skill",
-        "image": "/assets/images/placeholder-image.jpg",
+        "name": "Ruby on Rails",
+        "image": "/assets/images/Ruby_On_Rails_Logo.svg",
+        "imageAlt": "This is a test"
+      },
+      {
+        "name": "Rust",
+        "image": "/assets/images/Rust_programming_language_black_logo.svg.png",
+        "imageAlt": "This is a test"
+      },
+      {
+        "name": "Swift",
+        "image": "/assets/images/swift-logo-vector.svg",
         "imageAlt": "This is a test"
       }
     ],
@@ -60,5 +70,5 @@
       "item": "Testing new skill"
     }
   ],
-  "interestsImage": "/assets/projects/placeholder-image.jpg"
+  "interestsImage": "/assets/images/placeholder-image.jpg"
 }

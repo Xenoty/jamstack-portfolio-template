@@ -24,7 +24,7 @@
     <meta property="og:url" content="https://11ty-portfolio-template.netlify.app/about/" />
     <meta property="og:title" content="Get to know me" />
     <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud" />
-    <meta property="og:image" content="https://11ty-portfolio-template.netlify.app/assets/images/placeholder-image.jpg" />
+    <meta property="og:image" content="https://11ty-portfolio-template.netlify.app/assets/images/pexels-spencer-selover-590139-compressed.jpg" />
 
     <!-- CSS -->
     <link href="/style.css" rel="stylesheet">
@@ -42,15 +42,16 @@
 
              <!-- Desktop nav-->   
             <div class="nav-main">
+                <a href="/" class="nav-logo">
                 <li>
-                    <a href="/" class="nav-logo">
-                        <object type="image/svg+xml" data="/assets/images/logoipsum-logo-1.svg"></object>
-                    </a>
+                    <img src="/assets/images/logoipsum-logo-1.svg" alt="Logoipsum">
                 </li>
+                </a>
             </div>
+
             <ul class="nav-links">
 
-                
+    
     <li>
         <a href="/" 
         >
@@ -82,54 +83,54 @@
     </li>
 
 
-            </ul>
+</ul>
 
             <!-- Mobile nav-->
             <div class="hamburger">
-                <div class="hamburger-icon" onclick="ToggleHamburger('.hamburger-content')">
-                    <div class="line top-line"></div>
-                    <div class="line"></div>
-                    <div class="line bottom-line"></div>
-                </div>
+    <div class="hamburger-icon" onclick="ToggleHamburger('.hamburger-content')">
+        <div class="line top-line"></div>
+        <div class="line"></div>
+        <div class="line bottom-line"></div>
+    </div>
 
-                <div class="hamburger-content">
-                    <ul class="hamburger-links">
+    <div class="hamburger-content">
+        <ul class="hamburger-links">
 
-                         
-                            <li>
-                                <a href="/" 
-                                >
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                        
-                            <li>
-                                <a href="/work/" 
-                                >
-                                    <span>Work</span>
-                                </a>
-                            </li>
-                        
-                            <li>
-                                <a href="/about/" 
-                                 
-                                aria-current="page"
-                                >
-                                    <span>About</span>
-                                </a>
-                            </li>
-                        
-                            <li>
-                                <a href="/contact/" 
-                                >
-                                    <span>Contact</span>
-                                </a>
-                            </li>
-                        
-                        
-                    </ul>
-                </div>
-            </div>
+            
+                <li>
+                    <a href="/" 
+                    >
+                        <span>Home</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/work/" 
+                    >
+                        <span>Work</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/" 
+                     
+                        aria-current="page"
+                    >
+                        <span>About</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/" 
+                    >
+                        <span>Contact</span>
+                    </a>
+                </li>
+            
+            
+        </ul>
+    </div>
+</div>
 
         </div>
     </nav>
@@ -143,8 +144,9 @@
     </div>
 
     <div class="about-grid">
-        <img src="/assets/images/placeholder-image.jpg" 
-             alt="placeholder">
+        <img src="/assets/images/pexels-spencer-selover-590139-compressed.jpg" 
+             alt="placeholder"
+             class="border-round-lrg">
         <div class="about-intro">
             <p class="intro-meta">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -152,19 +154,19 @@
             <div class="about-links">
                 
                     <a href="https://www.example.com" 
-                      class="btn-primary bg-white font-italics"> 
+                      class="border-round-sm btn-primary"> 
                       LinkedIn 
                       <span>&#8594;</span>
                     </a>
                 
                     <a href="https://www.example.com" 
-                      class="btn-primary bg-white font-italics"> 
+                      class="border-round-sm btn-primary"> 
                       Resume 
                       <span>&#8594;</span>
                     </a>
                 
                     <a href="https://www.example.com" 
-                      class="btn-primary bg-white font-italics"> 
+                      class="border-round-sm btn-primary"> 
                       Testing new link 
                       <span>&#8594;</span>
                     </a>
@@ -180,35 +182,53 @@
     </div>
 
     <div class="skills">
+        
         <div class="skills-container">
-
-            
-                <div class="skill-card">
-                    <p>Skill1</p>
-                    <img src="https://via.placeholder.com/400" 
-                         alt="Image description here">
-                </div>
-            
-                <div class="skill-card">
-                    <p>Skill2</p>
-                    <img src="https://via.placeholder.com/400" 
-                         alt="Image description here">
-                </div>
-            
-                <div class="skill-card">
-                    <p>Skill3</p>
-                    <img src="https://via.placeholder.com/400" 
-                         alt="Image description here">
-                </div>
-            
-                <div class="skill-card">
-                    <p>Testing new skill</p>
-                    <img src="/assets/images/placeholder-image.jpg" 
-                         alt="This is a test">
-                </div>
-            
-            
-        </div>
+                
+                    <div class="skill-card border-round-lrg">
+                        <p>React</p>
+                        <img src="/assets/images/320px-React-icon.svg.png" 
+                            alt="Image description here"
+                            class="border-round-lrg">
+                    </div>
+                
+                    <div class="skill-card border-round-lrg">
+                        <p>Javascript</p>
+                        <img src="/assets/images/600px-JavaScript-logo.png" 
+                            alt="Image description here"
+                            class="border-round-lrg">
+                    </div>
+                
+                    <div class="skill-card border-round-lrg">
+                        <p>CSharp</p>
+                        <img src="/assets/images/csharp-logo.png" 
+                            alt="Image description here"
+                            class="border-round-lrg">
+                    </div>
+                
+                    <div class="skill-card border-round-lrg">
+                        <p>Ruby on Rails</p>
+                        <img src="/assets/images/Ruby_On_Rails_Logo.svg" 
+                            alt="This is a test"
+                            class="border-round-lrg">
+                    </div>
+                
+                    <div class="skill-card border-round-lrg">
+                        <p>Rust</p>
+                        <img src="/assets/images/Rust_programming_language_black_logo.svg.png" 
+                            alt="This is a test"
+                            class="border-round-lrg">
+                    </div>
+                
+                    <div class="skill-card border-round-lrg">
+                        <p>Swift</p>
+                        <img src="/assets/images/swift-logo-vector.svg" 
+                            alt="This is a test"
+                            class="border-round-lrg">
+                    </div>
+                
+            </div>
+        
     </div>
 </div>
 
@@ -217,23 +237,26 @@
         <h1>Interests</h1>
     </div>
 
-    <div class="interests-list">                    
+    <div class="interests-list" 
+    >                    
         <ul>
             
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li><span class="bullet-point"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
             
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li><span class="bullet-point"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
             
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li><span class="bullet-point"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
             
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li><span class="bullet-point"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
             
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li><span class="bullet-point"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
             
-                <li>Testing new skill</li>
+                <li><span class="bullet-point"></span>Testing new skill</li>
             
         </ul>
-        <img src="https://via.placeholder.com/600" alt="placeholderImage">
+        
+            <img src="/assets/images/placeholder-image.jpg" alt="placeholderImage">
+        
     </div>
 </div>
 

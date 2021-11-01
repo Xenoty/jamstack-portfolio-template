@@ -307,6 +307,13 @@ input:focus, textarea:focus{
     margin-right: 10px;
 }
 
+.alert{
+    background-color: var(--secondary-dark);
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+}
+
 /* #endregion */
 
 /* #region NavigationBar */

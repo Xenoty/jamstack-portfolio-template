@@ -252,7 +252,7 @@ input:focus, textarea:focus{
     height: unset;
     z-index: unset;
     color: unset;
-    margin-bottom: 10vh;
+    margin-bottom: 4vh;
 }
 
 .pagination ol{
@@ -628,7 +628,12 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
     cursor: pointer;
     float: right;
     padding: 4px;
+    padding-bottom: 0px;
     margin-right: 5px;
+}
+
+.projects-layout:hover{
+    background-color: #f0544f59;
 }
 
 .projects-layout svg{
@@ -644,7 +649,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .active-layout{
-    background-color: var(--primary-colour);
+    background-color: var(--primary-colour) !important;
 }
 
 /*#endregion*/

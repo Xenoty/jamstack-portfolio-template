@@ -329,8 +329,12 @@ nav {
 }
 
 nav .nav-logo {
-    display: block;
+    /* display: block;
     line-height: unset;
+    height: var(--nav-height); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: var(--nav-height);
 }
 
@@ -338,6 +342,13 @@ nav .nav-logo svg, nav .nav-logo object{
     max-width: 120px;
     margin: auto;
     height: var(--nav-height);
+}
+
+nav .nav-logo img{
+    max-width: 120px;
+    margin: auto;
+    max-height: var(--nav-height);
+    display: block;
 }
 
 nav li a{ 

@@ -329,9 +329,6 @@ nav {
 }
 
 nav .nav-logo {
-    /* display: block;
-    line-height: unset;
-    height: var(--nav-height); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -540,6 +537,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
     grid-column-gap: 4vw;
     grid-row-gap: 5vh; */
     margin-bottom: 8vh;
+    clear: both;
 }
 
 .card{
@@ -600,6 +598,53 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 .last-card{
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    grid-column-gap: 4vw !important;
+}
+
+.card-grid{
+    grid-column-gap: 0 !important;
+    min-height: 250px !important;
+    max-height: 290px !important;
+    width: 100%;
+}
+
+.card-title-grid{
+    margin-bottom: 10px !important;
+    margin-top: 0px !important;
+}
+
+.card-breadcrumbs-grid{
+    overflow: hidden;
+    max-height: 95px;
+    min-height: 95px;
+}
+
+.projects-layout{
+    cursor: pointer;
+    float: right;
+    padding: 4px;
+    margin-right: 5px;
+}
+
+.projects-layout svg{
+    max-width: 40px;
+    height: fit-content;
+}
+
+.projects-layout-container{
+    max-width: 1000px;
+    overflow: auto;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+.active-layout{
+    background-color: var(--primary-colour);
 }
 
 /*#endregion*/
@@ -995,6 +1040,10 @@ footer .sitemap a{
 
     footer .footer-links{
         grid-column-gap: 5vw;
+    }
+
+    .projects-layout-container{
+        display: none;
     }
 }
 

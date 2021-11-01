@@ -36,6 +36,58 @@ date: 2021-01-01
         <h1>Featured Projects</h1>
     </div>
 
+    <div class="projects-layout-container">
+        <span class="projects-layout active-layout" id="featured_row" onclick="ShowCardRow();">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="58" viewBox="0 0 83 58">
+                <defs>
+                    <clipPath id="clip-path">
+                    <rect width="83" height="58" fill="none"/>
+                    </clipPath>
+                </defs>
+                <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+                    <g transform="translate(-173 -65)">
+                    <rect id="Rectangle_1" data-name="Rectangle 1" width="83" height="14" transform="translate(173 65)" fill="#fff"/>
+                    </g>
+                    <g transform="translate(-173 -44)">
+                    <rect id="Rectangle_1-2" data-name="Rectangle 1" width="83" height="14" transform="translate(173 65)" fill="#fff"/>
+                    </g>
+                    <g transform="translate(-173 -23)">
+                    <rect id="Rectangle_1-3" data-name="Rectangle 1" width="83" height="14" transform="translate(173 65)" fill="#fff"/>
+                    </g>
+                </g>
+            </svg>
+        </span> 
+        <span class="projects-layout" id="featured_grid" onclick="ShowCardGrid();">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="58" viewBox="0 0 83 58">
+                <defs>
+                    <clipPath id="clip-path">
+                    <rect width="83" height="58" fill="none"/>
+                    </clipPath>
+                </defs>
+                <g id="Repeat_Grid_2" data-name="Repeat Grid 2" clip-path="url(#clip-path)">
+                    <g transform="translate(-281 -70)">
+                    <rect id="Rectangle_2" data-name="Rectangle 2" width="22" height="25" transform="translate(281 70)" fill="#fff"/>
+                    </g>
+                    <g transform="translate(-251 -70)">
+                    <rect id="Rectangle_2-2" data-name="Rectangle 2" width="22" height="25" transform="translate(281 70)" fill="#fff"/>
+                    </g>
+                    <g transform="translate(-221 -70)">
+                    <rect id="Rectangle_2-3" data-name="Rectangle 2" width="22" height="25" transform="translate(281 70)" fill="#fff"/>
+                    </g>
+                    <g transform="translate(-281 -37)">
+                    <rect id="Rectangle_2-4" data-name="Rectangle 2" width="22" height="25" transform="translate(281 70)" fill="#fff"/>
+                    </g>
+                    <g transform="translate(-251 -37)">
+                    <rect id="Rectangle_2-5" data-name="Rectangle 2" width="22" height="25" transform="translate(281 70)" fill="#fff"/>
+                    </g>
+                    <g transform="translate(-221 -37)">
+                    <rect id="Rectangle_2-6" data-name="Rectangle 2" width="22" height="25" transform="translate(281 70)" fill="#fff"/>
+                    </g>
+                </g>
+            </svg>
+        </span>
+    </div>
+
     <div class="projects">
 
         {% if collections.featured.length < 0 %}

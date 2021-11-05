@@ -492,7 +492,8 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .landing .hero .intro{
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 26px;
+    line-height: 29px;
 }
 
 .landing .avatar{
@@ -507,7 +508,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .landing h1{
-    font-size: 19px;
+    font-size: 20px;
     font-family: Poppins-Light, sans-serif;
     font-weight: 500;
     margin-bottom: unset;
@@ -1001,6 +1002,12 @@ footer .sitemap a{
 
     .projects-layout-container{
         display: none;
+    }
+}
+
+@media screen and (max-width:600px){
+    .skills-container{
+        grid-gap: 12vw;
     }
 }
 

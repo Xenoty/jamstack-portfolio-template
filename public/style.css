@@ -342,17 +342,16 @@ nav .nav-logo svg, nav .nav-logo object{
 }
 
 nav .nav-logo img{
-    max-width: 120px;
+    /* max-width: 120px; */
     margin: auto;
     max-height: var(--nav-height);
     display: block;
 }
 
 nav li a{ 
-    font-size: 14px;
+    font-size: 18px;
     color: var(--white);
     line-height: var(--nav-height);
-
 }
 
 nav a:hover{
@@ -392,9 +391,14 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 .hamburger-icon{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: -1px;
     grid-row-gap: 6px;
-    height: inherit;
-    padding: 5px 0;
+    /* height: inherit; */
+    max-height: calc(var(--nav-height) * 0.80);
+    margin-top: calc(var(--nav-height) * 0.20);
+    /* line-height: var(--nav-height); */
+    /* padding: 5px 0; */
+    /* margin: auto; */
 }
 
 .hamburger-icon .line{
@@ -662,7 +666,7 @@ footer {
 
 footer * {
     color: var(--white);
-    font-size: 14px;
+    font-size: 16px;
     font-family: Poppins-Light, sans-serif;
 }
 
@@ -987,6 +991,14 @@ footer .sitemap a{
 
 @media screen and (max-width:900px){
 
+    .nav-links{
+        display: none !important;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
     .skills-container{
         grid-gap: 7vw;
     }
@@ -1012,13 +1024,13 @@ footer .sitemap a{
 }
 
 @media screen and (max-width:450px){
-    .nav-links{
+    /* .nav-links{
         display: none !important;
     }
 
     .hamburger{
         display: block;
-    }
+    } */
 
     footer{
         padding: 9vh 0;

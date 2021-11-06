@@ -5,34 +5,24 @@
   "logo" : "/assets/images/logoipsum-logo-1.svg",
   "socialLinks": [
     {
-      "name": "LinkedIn",
-      "url": "https://www.example.com/",
-      "img": "https://via.placeholder.com/50",
-      "imgAlt": "Placeholder Image"
+      "url": "https://www.linkedin.com/",
+      "img": "/assets/images/LinkedIn-Logo.png",
+      "imgAlt": "LinkedIn_image"
     },
     {
-      "name": "Twitter",
-      "url": "https://www.example.com/",
-      "img": "https://via.placeholder.com/50",
-      "imgAlt": "Placeholder Image"
+      "url": "https://www.twitter.com/",
+      "img": "/assets/images/Twitterlogo-blue.png",
+      "imgAlt": "Twitter_image"
     },
     {
-      "name": "Instagram",
-      "url": "https://www.example.com/",
-      "img": "https://via.placeholder.com/50",
-      "imgAlt": "Placeholder Image"
+      "url": "https://www.instagram.com/",
+      "img": "/assets/images/Instagram_Glyph_Gradient_RGB.png",
+      "imgAlt": "Instagram_image"
     },
     {
-      "name": "Behance",
-      "url": "https://www.example.com/",
-      "img": "https://via.placeholder.com/50",
-      "imgAlt": "Placeholder Image"
-    },
-    {
-      "name": "Testing link through CMS",
-      "url": "https://www.example.com",
-      "img": "/assets/images/logoipsum-logo-39.svg",
-      "imgAlt": "Testing"
+      "url": "https://www.behance.net/",
+      "img": "/assets/images/behance-logo-1373E40919.png",
+      "imgAlt": "Behance_image"
     }
   ]
 }

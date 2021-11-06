@@ -15,7 +15,7 @@ collections:
     preview_path: projects/{{slug}}
     fields: 
      - { label: "Title", name: "title", widget: "string", hint: "The title of the project. This will also be displayed in the tab name." }
-     - { label: "Date", name: "date", widget: "datetime", hint: "When was the project created?" }
+     - { label: "Date", name: "date", widget: "datetime", required: false, hint: "When was the project created?" }
      - label: "Tags"
        name: "tags"
        widget: "select"
@@ -126,7 +126,6 @@ collections:
             collapsed: true
             hint: "Links displayed at the bottom of the footer under 'Follow Me'."
             fields: 
-              - { label: "Name", name: "name", widget: "string", hint: "The visible text you want displayed." }
               - { label: "Url", name: "url", widget: "string", hint: "The desired link. (e.g. https://www.example.com)"}
               - { label: "Icon", name: "img", widget: "image", hint: "Using .svg files are best for icons." }
               - { label: "Icon Alt", name: "imgAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }

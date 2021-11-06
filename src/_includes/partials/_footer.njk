@@ -9,12 +9,15 @@
                     <p>Follow Me</p>
                 </div>
 
+                <div class="footer-links-wrapper">
                 {% for item in site.socialLinks %}
                     <div class="footer-link">
-                        <img src="{{ item.img }}" alt="{{ item.imgAlt }}">
-                        <a href="{{ item.url }}">{{ item.name }}</a>
+                        <a href="{{ item.url }}" target="_blank">
+                            <img src="{{ item.img }}" alt="{{ item.imgAlt }}">
+                        </a>
                     </div>
                 {% endfor %}
+                </div>
                 
             </div>
             <div class="sitemap">

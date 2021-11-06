@@ -129,8 +129,9 @@ input:focus, textarea:focus{
 }
 
 .spacing{
-    margin: 0px 7.5% 0 7.5%;
-    max-width:85%
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .anchor-link{
@@ -342,17 +343,16 @@ nav .nav-logo svg, nav .nav-logo object{
 }
 
 nav .nav-logo img{
-    max-width: 120px;
+    /* max-width: 120px; */
     margin: auto;
     max-height: var(--nav-height);
     display: block;
 }
 
 nav li a{ 
-    font-size: 14px;
+    font-size: 18px;
     color: var(--white);
     line-height: var(--nav-height);
-
 }
 
 nav a:hover{
@@ -392,9 +392,14 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 .hamburger-icon{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: -1px;
     grid-row-gap: 6px;
-    height: inherit;
-    padding: 5px 0;
+    /* height: inherit; */
+    max-height: calc(var(--nav-height) * 0.80);
+    margin-top: calc(var(--nav-height) * 0.20);
+    /* line-height: var(--nav-height); */
+    /* padding: 5px 0; */
+    /* margin: auto; */
 }
 
 .hamburger-icon .line{
@@ -455,7 +460,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .rotate-top{
-    transform: rotate(45deg);
+    transform: rotate(35deg);
 }
 
 .ham-middle-line{
@@ -463,7 +468,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .rotate-bottom{
-    transform: rotate(-45deg);
+    transform: rotate(-35deg);
 }
 
 .reset-rotate{
@@ -492,7 +497,8 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .landing .hero .intro{
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 26px;
+    line-height: 29px;
 }
 
 .landing .avatar{
@@ -507,7 +513,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .landing h1{
-    font-size: 19px;
+    font-size: 20px;
     font-family: Poppins-Light, sans-serif;
     font-weight: 500;
     margin-bottom: unset;
@@ -661,13 +667,14 @@ footer {
 
 footer * {
     color: var(--white);
-    font-size: 14px;
+    font-size: 16px;
     font-family: Poppins-Light, sans-serif;
 }
 
 footer a{
     color: #DBDBDB;
     margin: auto 0;
+    display: block;
 }
 
 footer a:hover{
@@ -679,6 +686,13 @@ footer .copy-right{
     margin-bottom: 25px;
 }
 
+footer .footer-links-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 180px;
+    grid-gap: 8px;
+}
+
 footer .footer-links{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -688,20 +702,21 @@ footer .footer-links{
 }
 
 footer .footer-link{
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 8px;
-    margin-bottom: 5px;
+    grid-gap: 8px; */
+    /* margin-bottom: 5px; */
 }
 
 .footer-link img{
     width: 100%;
     height: 100%;
-    max-height: 25px;
+    max-width: 35px;
 }
 
 footer .footer-category-title{
     font-family: Poppins-Medium, sans-serif;
+    margin-bottom: 8px;
 }
 
 footer .sitemap a{
@@ -830,7 +845,8 @@ footer .sitemap a{
 }
 
 .meta-container svg{
-    max-width: 50px;
+    max-width: 28px;
+    height: fit-content;
 }
 
 .project-summary p{
@@ -843,15 +859,12 @@ footer .sitemap a{
 .project-meta{
     width: fit-content;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
     margin-bottom: 30px;
 }
 
 .meta-container p, .meta-container a{
     font-family: Poppins-Light, sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     margin: auto;
 }
 
@@ -986,6 +999,14 @@ footer .sitemap a{
 
 @media screen and (max-width:900px){
 
+    .nav-links{
+        display: none !important;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
     .skills-container{
         grid-gap: 7vw;
     }
@@ -1004,14 +1025,20 @@ footer .sitemap a{
     }
 }
 
+@media screen and (max-width:600px){
+    .skills-container{
+        grid-gap: 12vw;
+    }
+}
+
 @media screen and (max-width:450px){
-    .nav-links{
+    /* .nav-links{
         display: none !important;
     }
 
     .hamburger{
         display: block;
-    }
+    } */
 
     footer{
         padding: 9vh 0;
@@ -1063,11 +1090,6 @@ footer .sitemap a{
 
     .top-p-m{
         padding-top: 0;
-    }
-
-    .project-meta{
-        grid-template-columns: 1fr;
-        grid-row-gap: 10px;
     }
 }
 

@@ -129,8 +129,9 @@ input:focus, textarea:focus{
 }
 
 .spacing{
-    margin: 0px 7.5% 0 7.5%;
-    max-width:85%
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .anchor-link{

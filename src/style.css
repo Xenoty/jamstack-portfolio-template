@@ -460,7 +460,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .rotate-top{
-    transform: rotate(45deg);
+    transform: rotate(35deg);
 }
 
 .ham-middle-line{
@@ -468,7 +468,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .rotate-bottom{
-    transform: rotate(-45deg);
+    transform: rotate(-35deg);
 }
 
 .reset-rotate{

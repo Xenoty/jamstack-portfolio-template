@@ -845,7 +845,8 @@ footer .sitemap a{
 }
 
 .meta-container svg{
-    max-width: 50px;
+    max-width: 28px;
+    height: fit-content;
 }
 
 .project-summary p{
@@ -858,15 +859,12 @@ footer .sitemap a{
 .project-meta{
     width: fit-content;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
     margin-bottom: 30px;
 }
 
 .meta-container p, .meta-container a{
     font-family: Poppins-Light, sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     margin: auto;
 }
 
@@ -1092,11 +1090,6 @@ footer .sitemap a{
 
     .top-p-m{
         padding-top: 0;
-    }
-
-    .project-meta{
-        grid-template-columns: 1fr;
-        grid-row-gap: 10px;
     }
 }
 

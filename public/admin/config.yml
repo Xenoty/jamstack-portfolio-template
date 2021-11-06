@@ -126,7 +126,6 @@ collections:
             collapsed: true
             hint: "Links displayed at the bottom of the footer under 'Follow Me'."
             fields: 
-              - { label: "Name", name: "name", widget: "string", hint: "The visible text you want displayed." }
               - { label: "Url", name: "url", widget: "string", hint: "The desired link. (e.g. https://www.example.com)"}
               - { label: "Icon", name: "img", widget: "image", hint: "Using .svg files are best for icons." }
               - { label: "Icon Alt", name: "imgAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }

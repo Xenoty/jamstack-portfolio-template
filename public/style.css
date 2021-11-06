@@ -674,6 +674,7 @@ footer * {
 footer a{
     color: #DBDBDB;
     margin: auto 0;
+    display: block;
 }
 
 footer a:hover{
@@ -685,6 +686,13 @@ footer .copy-right{
     margin-bottom: 25px;
 }
 
+footer .footer-links-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 180px;
+    grid-gap: 8px;
+}
+
 footer .footer-links{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -694,20 +702,21 @@ footer .footer-links{
 }
 
 footer .footer-link{
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 8px;
-    margin-bottom: 5px;
+    grid-gap: 8px; */
+    /* margin-bottom: 5px; */
 }
 
 .footer-link img{
     width: 100%;
     height: 100%;
-    max-height: 25px;
+    max-width: 35px;
 }
 
 footer .footer-category-title{
     font-family: Poppins-Medium, sans-serif;
+    margin-bottom: 8px;
 }
 
 footer .sitemap a{

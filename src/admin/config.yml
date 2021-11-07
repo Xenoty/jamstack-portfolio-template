@@ -7,7 +7,7 @@ publish_mode: editorial_workflow
 site_url: "https://11ty-portfolio-template.netlify.app/"
 logo_url: "https://11ty-portfolio-template.netlify.app/assets/images/logoipsum-logo-1.svg"
 collections:
-  - label: "Projects" 
+  - label: "All Projects" 
     name: "project"
     folder: "src/projects" 
     create: true 
@@ -27,6 +27,27 @@ collections:
      - { label: "Image caption", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
      - { label: "Summary", name: "summary", widget: "string" }
      - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
+  - label: "View Featured Projects"
+    name: "featured"
+    folder: "src/projects"
+    create: false
+    filter: { field: "tags", value: "featured"}
+    slug: "{{year}}-{{month}}-{{slug}}"
+    preview_path: projects/{{slug}}
+    fields: 
+      - { label: "Title", name: "title", widget: "string", hint: "The title of the project. This will also be displayed in the tab name." }
+      - { label: "Date", name: "date", widget: "datetime", required: false, hint: "When was the project created?" }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        hint: "All Projects should have 'project'. 'featured' will be displayed on the home page in a snippet."
+        multiple: true
+        options: ["project", "featured"]
+        default: ["project", "featured"]
+      - { label: "Thumbnail Image", name: "image", widget: "image", hint: "The image that will be displayed in the snippet and background." }
+      - { label: "Image caption", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
+      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
   - label: "Pages"
     name: "pages"
     files:

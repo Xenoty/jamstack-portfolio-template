@@ -102,19 +102,22 @@ collections:
             name: "skills"
             widget: "list"
             collapsed: true
+            hint: "Add any skills you want other people to see. This can be anything (e.g Marketing, Leadership etc.)"
             fields: 
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Name", name: "name", widget: "string", hint: "The name of the skill (e.g. Marketing)" }
+              - { label: "Image", name: "image", widget: "image", hint: "The image you want displayed for the skill. Remember to keep image sizes as small as possible." }
               - { label: "Image description", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
           - label : "Interests"
             name: "interests"
             widget: "list"
             collapsed: true
+            hint: "Add any interests you have that you want other people to see. (e.g. Social Media, News, Trends, Technology etc.)"
             fields:
-              - { label: "Item", name: "item", widget: "string"}
+              - { label: "Item", name: "item", widget: "string", hint: "The name of the interest."}
           - label: "InterestsImage"
             name: "interestsImage"
             collapsed: true
+            hint: "The image that will be displayed next to your interests. (suggested size +-500px)"
             widget: "image"
           - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
       - label: "Contact Page"

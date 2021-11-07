@@ -14,6 +14,7 @@
     --input-field-background: #F8F8F8;
     --placeholder: #D2D1D1;
     --featured-card-length: 1000px;
+    --markdown-heading-indentation: 6px;
 }
 
 /* #region General */
@@ -96,6 +97,8 @@ input, textarea{
 
 input{
     height: fit-content;
+    -webkit-appearance:none;
+    opacity: 1
 }
 
 input[type="submit"]{
@@ -876,19 +879,56 @@ footer .sitemap a{
     right: 14px;
 }
 
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
 .markdown h1{
-    margin-bottom: unset;
+    margin-bottom: 15px;
     line-height: revert;
     font-weight: revert;
+}
+
+.markdown h3, .markdown h4, .markdown h5, .markdown h6{
+    text-decoration: none;
+    font-style: italic;
+}
+
+.markdown h3{
+    margin-left: calc(2 * var(--markdown-heading-indentation));
+}
+
+.markdown h4{
+    margin-left: calc(3 * var(--markdown-heading-indentation));
+}
+
+.markdown h5{
+    margin-left: calc(4 * var(--markdown-heading-indentation));;
+}
+
+.markdown h6{
+    margin-left: calc(5 * var(--markdown-heading-indentation));
 }
 
 .markdown a{
     text-decoration: underline;
 }
 
-.markdown ul{
-    width: fit-content;
-    margin: 15px auto;
+.markdown ul, .markdown ol{
+    margin-left: 2vw;
+}
+
+.markdown img{
+    max-width: 525px;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.markdown p{
+    margin-bottom: 10px;
 }
 
 .work-content{

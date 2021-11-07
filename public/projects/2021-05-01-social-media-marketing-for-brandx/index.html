@@ -133,10 +133,11 @@
 </header>
     
     <main>
-      
+      <link href="/assets/themes/prism.css" rel="stylesheet"/>
+
 <img class="work-bg-img" src="/assets/images/placeholder-image.jpg" alt="This is a test">
 <div class="section spacing full-page top-p-m">
-    <div class="title">
+    <div class="title" id="project-title">
         <h1>Social Media Creation 2</h1>
     </div>
 
@@ -239,7 +240,31 @@ supported)</li>
 <p>Lectus nulla at volutpat diam ut venenatis tellus in. Ante metus dictum at tempor commodo ullamcorper a lacus. Auctor eu augue ut lectus. Lacus viverra vitae congue eu consequat ac felis. Pretium fusce id velit ut tortor pretium viverra suspendisse. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Etiam erat velit scelerisque in dictum non consectetur a. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Molestie at elementum eu facilisis sed. Consequat id porta nibh venenatis cras sed. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Nunc id cursus metus aliquam eleifend mi. A scelerisque purus semper eget duis at tellus. Dictumst quisque sagittis purus sit amet volutpat consequat mauris.</p>
 <p>Turpis in eu mi bibendum neque egestas congue quisque. Nunc sed augue lacus viverra vitae congue. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Pulvinar pellentesque habitant morbi tristique senectus et netus. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Porta nibh venenatis cras sed felis eget velit aliquet. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Aliquet risus feugiat in ante metus dictum at tempor. Donec pretium vulputate sapien nec sagittis aliquam. Rutrum tellus pellentesque eu tincidunt. Sit amet nulla facilisi morbi tempus iaculis urna id. Massa sed elementum tempus egestas sed sed risus pretium quam.</p>
 
+
+        <a href="/work/" class="btn-primary top-m-s">All Projects</a><a href="#project-title" class="btn-primary" style="margin-top: 15px;">Back to Top</a>
 </div>
+
+<script>
+    $(document).ready(function() {
+        WrapCodeTagsWithPreTags();
+        AppenBulletListSpanToLists();
+    });
+
+    function AppenBulletListSpanToLists(){
+      $(".markdown ul, .markdown ol").children().prepend("<span class='bullet-point'></span>")
+    }
+
+    function WrapCodeTagsWithPreTags(){
+        $("code").parent().each(function(index){
+            if(!$(this).is('pre'))
+            {
+                $(this).children().wrap("<pre class='language-csharp' tabindex='0'></pre>");
+            }
+        });
+    }
+</script>
+
+<script src="/assets/themes/prism.js"></script>
     </main>
     
     <footer>
@@ -276,6 +301,12 @@ supported)</li>
                     <div class="footer-link">
                         <a href="https://www.behance.net/" target="_blank">
                             <img src="/assets/images/behance-logo-1373E40919.png" alt="Behance_image">
+                        </a>
+                    </div>
+                
+                    <div class="footer-link">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="/assets/images/4202110facebooklogosocialsocialmedia-115707_115594.png" alt="Facebook_icon">
                         </a>
                     </div>
                 

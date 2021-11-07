@@ -6,10 +6,11 @@ eleventyComputed:
     metaDescription: "{{summary}}"
     metaImage: "{{image}}"
 ---
+<link href="/assets/themes/prism.css" rel="stylesheet"/>
 
 <img class="work-bg-img" src="{{ image }}" alt="{{ imageAlt}}">
 <div class="section spacing full-page top-p-m">
-    <div class="title">
+    <div class="title" id="project-title">
         <h1>{{ title }}</h1>
     </div>
 
@@ -63,4 +64,28 @@ eleventyComputed:
 <div class="section work-content markdown spacing bottom-m-l top-m-s">
     <span class="anchor-link" id="target-content"></span>
         {{ content | safe }}
+
+        <a href="/work/" class="btn-primary top-m-s">All Projects</a><a href="#project-title" class="btn-primary" style="margin-top: 15px;">Back to Top</a>
 </div>
+
+<script>
+    $(document).ready(function() {
+        WrapCodeTagsWithPreTags();
+        AppenBulletListSpanToLists();
+    });
+
+    function AppenBulletListSpanToLists(){
+      $(".markdown ul, .markdown ol").children().prepend("<span class='bullet-point'></span>")
+    }
+
+    function WrapCodeTagsWithPreTags(){
+        $("code").parent().each(function(index){
+            if(!$(this).is('pre'))
+            {
+                $(this).children().wrap("<pre class='language-csharp' tabindex='0'></pre>");
+            }
+        });
+    }
+</script>
+
+<script src="/assets/themes/prism.js"></script>

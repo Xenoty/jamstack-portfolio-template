@@ -13,6 +13,8 @@
     --h1: #F0544F;
     --input-field-background: #F8F8F8;
     --placeholder: #D2D1D1;
+    --featured-card-length: 1000px;
+    --markdown-heading-indentation: 6px;
 }
 
 /* #region General */
@@ -95,6 +97,8 @@ input, textarea{
 
 input{
     height: fit-content;
+    -webkit-appearance:none;
+    opacity: 1
 }
 
 input[type="submit"]{
@@ -196,7 +200,7 @@ input:focus, textarea:focus{
     text-decoration: underline;
     display: block;
     font-family: Poppins-Light;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .bottom-m-s{
@@ -552,13 +556,14 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
     grid-column-gap: 36px;
     margin: auto;
     margin-bottom: 5vh;
-    max-width: 1000px;
+    max-width: var(--featured-card-length);
     box-shadow: 0px 0px 9px 4px rgb(0 0 0 / 46%);
     background-color: var(--secondary-dark);
+    height: 300px;
 }
 
-.projects .card img{
-    height: 290px;
+.card .card-image-wrapper{
+    height: inherit;
 }
 
 .card .content{
@@ -572,7 +577,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .card-title{
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .card-title h4{
@@ -581,8 +586,8 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .card-date{
     font-size: 14px;
-    font-style: italic;
-    margin-bottom: 10px;
+    /* font-style: italic; */
+    margin-bottom: 13px;
 }
 
 .card-breadcrumbs{
@@ -820,7 +825,7 @@ footer .sitemap a{
 }
 
 .interests-list img{
-    max-width: 300px;
+    /* max-width: 300px; */
     margin: auto;
 }
 
@@ -874,19 +879,56 @@ footer .sitemap a{
     right: 14px;
 }
 
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
 .markdown h1{
-    margin-bottom: unset;
+    margin-bottom: 15px;
     line-height: revert;
     font-weight: revert;
+}
+
+.markdown h3, .markdown h4, .markdown h5, .markdown h6{
+    text-decoration: none;
+    font-style: italic;
+}
+
+.markdown h3{
+    margin-left: calc(2 * var(--markdown-heading-indentation));
+}
+
+.markdown h4{
+    margin-left: calc(3 * var(--markdown-heading-indentation));
+}
+
+.markdown h5{
+    margin-left: calc(4 * var(--markdown-heading-indentation));;
+}
+
+.markdown h6{
+    margin-left: calc(5 * var(--markdown-heading-indentation));
 }
 
 .markdown a{
     text-decoration: underline;
 }
 
-.markdown ul{
-    width: fit-content;
-    margin: 15px auto;
+.markdown ul, .markdown ol{
+    margin-left: 2vw;
+}
+
+.markdown img{
+    max-width: 525px;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.markdown p{
+    margin-bottom: 10px;
 }
 
 .work-content{
@@ -1023,11 +1065,50 @@ footer .sitemap a{
     .projects-layout-container{
         display: none;
     }
+
+    .card{
+        height: unset;
+        grid-template-columns: 1fr;
+    }
+
+    .card .card-image-wrapper{
+        height: 250px
+    }
+
+    .card-cta{
+        margin: auto;
+    }
+
+    .card-breadcrumbs{
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width:600px){
     .skills-container{
         grid-gap: 12vw;
+    }
+
+    .about-grid{
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+
+    .about-links{
+        margin: auto;
+        width: fit-content;
+    }
+
+    .interests-list{
+        grid-template-columns: 1fr;
+    }
+
+    .interests-list img{
+        grid-row-start: 1;
+    }
+
+    .interests-list ul{
+        margin-top: 10px;
     }
 }
 
@@ -1050,42 +1131,6 @@ footer .sitemap a{
 
     .full-page{
         margin-bottom: 0px !important;
-    }
-
-    .card{
-        grid-template-columns: 1fr;
-    }
-
-    .card-cta{
-        margin: auto;
-        /* margin-right: 0; */
-    }
-
-    .card-breadcrumbs{
-        margin-bottom: 20px;
-    }
-
-    .about-grid{
-        grid-template-columns: 1fr;
-        grid-row-gap: 30px;
-    }
-
-    .about-links{
-        /* margin: auto; */
-        margin: auto;
-        width: fit-content;
-    }
-
-    .interests-list{
-        grid-template-columns: 1fr;
-    }
-
-    .interests-list img{
-        grid-row-start: 1;
-    }
-
-    .interests-list ul{
-        margin-top: 10px;
     }
 
     .top-p-m{

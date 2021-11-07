@@ -7,7 +7,7 @@ publish_mode: editorial_workflow
 site_url: "https://11ty-portfolio-template.netlify.app/"
 logo_url: "https://11ty-portfolio-template.netlify.app/assets/images/logoipsum-logo-1.svg"
 collections:
-  - label: "Projects" 
+  - label: "All Projects" 
     name: "project"
     folder: "src/projects" 
     create: true 
@@ -27,6 +27,27 @@ collections:
      - { label: "Image caption", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
      - { label: "Summary", name: "summary", widget: "string" }
      - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
+  - label: "View Featured Projects"
+    name: "featured"
+    folder: "src/projects"
+    create: false
+    filter: { field: "tags", value: "featured"}
+    slug: "{{year}}-{{month}}-{{slug}}"
+    preview_path: projects/{{slug}}
+    fields: 
+      - { label: "Title", name: "title", widget: "string", hint: "The title of the project. This will also be displayed in the tab name." }
+      - { label: "Date", name: "date", widget: "datetime", required: false, hint: "When was the project created?" }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        hint: "All Projects should have 'project'. 'featured' will be displayed on the home page in a snippet."
+        multiple: true
+        options: ["project", "featured"]
+        default: ["project", "featured"]
+      - { label: "Thumbnail Image", name: "image", widget: "image", hint: "The image that will be displayed in the snippet and background." }
+      - { label: "Image caption", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
+      - { label: "Summary", name: "summary", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
   - label: "Pages"
     name: "pages"
     files:
@@ -81,19 +102,22 @@ collections:
             name: "skills"
             widget: "list"
             collapsed: true
+            hint: "Add any skills you want other people to see. This can be anything (e.g Marketing, Leadership etc.)"
             fields: 
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Name", name: "name", widget: "string", hint: "The name of the skill (e.g. Marketing)" }
+              - { label: "Image", name: "image", widget: "image", hint: "The image you want displayed for the skill. Remember to keep image sizes as small as possible." }
               - { label: "Image description", name: "imageAlt", widget: "string", hint: "The text displayed when the image isn't loaded." }
           - label : "Interests"
             name: "interests"
             widget: "list"
             collapsed: true
+            hint: "Add any interests you have that you want other people to see. (e.g. Social Media, News, Trends, Technology etc.)"
             fields:
-              - { label: "Item", name: "item", widget: "string"}
+              - { label: "Item", name: "item", widget: "string", hint: "The name of the interest."}
           - label: "InterestsImage"
             name: "interestsImage"
             collapsed: true
+            hint: "The image that will be displayed next to your interests. (suggested size +-500px)"
             widget: "image"
           - { label: "Body", name: "body", widget: "markdown", hint: "Any content you want to add. This will already be stylized for you."}
       - label: "Contact Page"

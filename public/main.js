@@ -1,15 +1,5 @@
 const mainTag = document.getElementsByTagName("main");
 
-function InsertComponents(){
-    $.get("../components/nav.html", function(data){
-        $("header").replaceWith(data);
-    });
-
-    $.get("../components/footer.html", function(data){
-        $("footer").replaceWith(data);
-    });
-}
-
 function ToggleHamburger(className){
     $(className).toggle(); 
     $(mainTag).toggle();

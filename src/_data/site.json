@@ -1,8 +1,8 @@
 {
-  "author" : "John Doe",
-  "authorTwitter" : "@johndoe",
-  "url" : "https://11ty-portfolio-template.netlify.app",
-  "logo" : "/assets/images/logoipsum-logo-1.svg",
+  "author": "John Doe",
+  "authorTwitter": "@johndoe",
+  "url": "https://11ty-portfolio-template.netlify.app",
+  "logo": "/assets/images/logoipsum-logo-1.svg",
   "socialLinks": [
     {
       "url": "https://www.linkedin.com/",
@@ -23,6 +23,11 @@
       "url": "https://www.behance.net/",
       "img": "/assets/images/behance-logo-1373E40919.png",
       "imgAlt": "Behance_image"
+    },
+    {
+      "url": "https://www.facebook.com/",
+      "img": "/assets/images/4202110facebooklogosocialsocialmedia-115707_115594.png",
+      "imgAlt": "Facebook_icon"
     }
   ]
 }

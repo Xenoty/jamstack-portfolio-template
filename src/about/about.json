@@ -1,56 +1,41 @@
 {
-  "layout": "about.njk",
-  "title": "Get to know me",
-  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+  "skills": [
+    {
+      "name": "React",
+      "image": "/assets/images/320px-React-icon.svg.png",
+      "imageAlt": "Image description here"
+    },
+    {
+      "name": "Javascript",
+      "image": "/assets/images/600px-JavaScript-logo.png",
+      "imageAlt": "Image description here"
+    },
+    {
+      "name": "CSharp",
+      "image": "/assets/images/csharp-logo.png",
+      "imageAlt": "Image description here"
+    },
+    {
+      "name": "Ruby on Rails",
+      "image": "/assets/images/Ruby_On_Rails_Logo.svg",
+      "imageAlt": "This is a test"
+    },
+    {
+      "name": "Rust",
+      "image": "/assets/images/Rust_programming_language_black_logo.svg.png",
+      "imageAlt": "This is a test"
+    },
+    {
+      "name": "Swift",
+      "image": "/assets/images/swift-logo-vector.svg",
+      "imageAlt": "This is a test"
+    }
+  ],
+  "body": "# Heading 1\n\nApparently it didn't pick up the body text already there",
   "landingImage": "/assets/images/pexels-spencer-selover-590139-compressed.jpg",
-  "landingImageAlt": "placeholder",
-  "links":[
-      { 
-        "linkName": "LinkedIn",
-        "url": "https://www.example.com"
-      },
-      {
-        "linkName": "Resume",
-        "url": "https://www.example.com"
-      },
-      {
-        "linkName": "Testing new link",
-        "url": "https://www.example.com"
-      }
-    ],
-  "skills":[
-      { 
-        "name": "React",
-        "image": "/assets/images/320px-React-icon.svg.png",
-        "imageAlt": "Image description here"
-      },
-      {
-        "name": "Javascript",
-        "image": "/assets/images/600px-JavaScript-logo.png",
-        "imageAlt": "Image description here"
-      },
-      {
-        "name": "CSharp",
-        "image": "/assets/images/csharp-logo.png",
-        "imageAlt": "Image description here"
-      },
-      {
-        "name": "Ruby on Rails",
-        "image": "/assets/images/Ruby_On_Rails_Logo.svg",
-        "imageAlt": "This is a test"
-      },
-      {
-        "name": "Rust",
-        "image": "/assets/images/Rust_programming_language_black_logo.svg.png",
-        "imageAlt": "This is a test"
-      },
-      {
-        "name": "Swift",
-        "image": "/assets/images/swift-logo-vector.svg",
-        "imageAlt": "This is a test"
-      }
-    ],
-  "interests":[
+  "landingImageAlt": "Man sitting down looking over a lake",
+  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+  "interests": [
     {
       "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
@@ -68,7 +53,22 @@
     },
     {
       "item": "Testing new skill"
+    },
+    {
+      "item": "This is a really long interest, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
     }
   ],
-  "interestsImage": "/assets/images/placeholder-image.jpg"
+  "layout": "about.njk",
+  "interestsImage": "/assets/images/pexels-jess-loiterton-4321812-1-.jpg",
+  "title": "Get to know me",
+  "links": [
+    {
+      "linkName": "LinkedIn",
+      "url": "https://www.example.com"
+    },
+    {
+      "linkName": "Resume",
+      "url": "https://www.example.com"
+    }
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "layout": "work.njk",
   "title": "Latest Projects",
-  "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-  "image": "/assets/images/placeholder-image.jpg",
+  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  "image": "/assets/images/pexels-kampus-production-7893740-compressed.jpg",
   "pagination": {
     "data": "collections.project",
     "size": 5,

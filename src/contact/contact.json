@@ -1,6 +1,6 @@
 {
-    "layout" : "contact.njk",
-    "title" : "Contact Me",
-    "summary": "Interested in my work? Lets get your idea to action.",
-    "image": "/assets/images/placeholder-image.jpg"
+  "layout": "contact.njk",
+  "title": "Contact Me",
+  "summary": "Interested in my work? Lets get your idea to action.",
+  "image": "/assets/images/pexels-viktoria-slowikowska-5332154-1-.jpg"
 }

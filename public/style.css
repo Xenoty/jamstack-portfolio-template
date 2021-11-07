@@ -820,7 +820,7 @@ footer .sitemap a{
 }
 
 .interests-list img{
-    max-width: 300px;
+    /* max-width: 300px; */
     margin: auto;
 }
 
@@ -1029,6 +1029,28 @@ footer .sitemap a{
     .skills-container{
         grid-gap: 12vw;
     }
+
+    .about-grid{
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+
+    .about-links{
+        margin: auto;
+        width: fit-content;
+    }
+
+    .interests-list{
+        grid-template-columns: 1fr;
+    }
+
+    .interests-list img{
+        grid-row-start: 1;
+    }
+
+    .interests-list ul{
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width:450px){
@@ -1063,29 +1085,6 @@ footer .sitemap a{
 
     .card-breadcrumbs{
         margin-bottom: 20px;
-    }
-
-    .about-grid{
-        grid-template-columns: 1fr;
-        grid-row-gap: 30px;
-    }
-
-    .about-links{
-        /* margin: auto; */
-        margin: auto;
-        width: fit-content;
-    }
-
-    .interests-list{
-        grid-template-columns: 1fr;
-    }
-
-    .interests-list img{
-        grid-row-start: 1;
-    }
-
-    .interests-list ul{
-        margin-top: 10px;
     }
 
     .top-p-m{

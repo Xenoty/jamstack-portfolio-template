@@ -1,8 +1,12 @@
  <div class="card">
+    <div class="card-image-wrapper">
     <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}">
+    </div>
     <div class="content">
         <div class="card-title"><h4>{{ project.data.title }}</h4></div>
-        <div class="card-date">{{ project.data.date | projectDate}}</div>
+        {% if project.data.date %}
+            <div class="card-date">{{ project.data.date | projectDate}}</div>
+        {% endif %}
         <div class="card-breadcrumbs"><p>{{ project.data.summary }}</p></div>
         <a href="{{ project.url }}" class="card-cta btn-primary">Learn More</a>
     </div>

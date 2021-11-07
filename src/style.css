@@ -556,10 +556,11 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
     max-width: var(--featured-card-length);
     box-shadow: 0px 0px 9px 4px rgb(0 0 0 / 46%);
     background-color: var(--secondary-dark);
+    max-height: 300px;
 }
 
-.projects .card img{
-    height: 290px;
+.card .card-image-wrapper{
+    max-height: inherit;
 }
 
 .card .content{
@@ -573,7 +574,7 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .card-title{
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .card-title h4{
@@ -582,8 +583,8 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .card-date{
     font-size: 14px;
-    font-style: italic;
-    margin-bottom: 10px;
+    /* font-style: italic; */
+    margin-bottom: 13px;
 }
 
 .card-breadcrumbs{
@@ -1024,6 +1025,23 @@ footer .sitemap a{
     .projects-layout-container{
         display: none;
     }
+
+    .card{
+        max-height: unset;
+        grid-template-columns: 1fr;
+    }
+
+    .card .card-image-wrapper{
+        max-height: 250px;
+    }
+
+    .card-cta{
+        margin: auto;
+    }
+
+    .card-breadcrumbs{
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -1073,19 +1091,6 @@ footer .sitemap a{
 
     .full-page{
         margin-bottom: 0px !important;
-    }
-
-    .card{
-        grid-template-columns: 1fr;
-    }
-
-    .card-cta{
-        margin: auto;
-        /* margin-right: 0; */
-    }
-
-    .card-breadcrumbs{
-        margin-bottom: 20px;
     }
 
     .top-p-m{

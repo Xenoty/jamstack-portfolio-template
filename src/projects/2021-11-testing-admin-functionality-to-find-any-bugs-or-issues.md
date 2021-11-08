@@ -1,5 +1,5 @@
 ---
-title: Addidas brand exploration
+title: Project Title 6
 date: ""
 tags:
   - project

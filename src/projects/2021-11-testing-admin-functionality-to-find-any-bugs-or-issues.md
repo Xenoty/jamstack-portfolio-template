@@ -1,13 +1,15 @@
 ---
-title: "Testing admin functionality to find any bugs or issues. "
+title: Project Title 6
 date: ""
 tags:
   - project
   - featured
 image: /assets/images/pexels-tembela-bohle-1102874.jpg
 imageAlt: Addidas bag in long grass
-summary: Brand identity exploration with addidas. This is a personal project to
-  identity different ways from the norm. This is going to be a really long text.
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
 ---
 # Heading 1
 

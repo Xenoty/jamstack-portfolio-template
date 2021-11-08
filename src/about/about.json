@@ -31,7 +31,7 @@
       "imageAlt": "This is a test"
     }
   ],
-  "body": "# Heading 1\n\nApparently it didn't pick up the body text already there",
+  "body": "# Heading 1\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n\n\n> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\n\n\n## Heading 2\n\nAuctor eu augue ut lectus arcu. In nisl nisi scelerisque eu ultrices vitae auctor. Euismod nisi porta lorem mollis aliquam ut porttitor. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Aliquet enim tortor at auctor urna nunc id cursus metus. Est ullamcorper eget nulla facilisi etiam dignissim diam quis. Pellentesque id nibh tortor id aliquet lectus proin nibh.\n\n* Id semper risus in hendrerit gravida rutrum. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. \n* Sem integer vitae justo eget magna fermentum iaculis.\n* Massa vitae tortor condimentum lacinia quis vel. Leo duis ut diam quam. Mi ipsum faucibus vitae aliquet nec ullamcorper.\n* Sapien faucibus et molestie ac. Enim eu turpis egestas pretium aenean pharetra magna ac placerat.\n\nPotenti nullam ac tortor vitae purus faucibus. Viverra aliquet eget sit amet tellus cras. Id semper risus in hendrerit gravida rutrum. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Elementum eu facilisis sed odio morbi quis commodo odio aenean.",
   "landingImage": "/assets/images/pexels-spencer-selover-590139-compressed.jpg",
   "landingImageAlt": "Man sitting down looking over a lake",
   "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
@@ -50,12 +50,6 @@
     },
     {
       "item": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    },
-    {
-      "item": "Testing new skill"
-    },
-    {
-      "item": "This is a really long interest, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
     }
   ],
   "layout": "about.njk",

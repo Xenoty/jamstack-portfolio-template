@@ -1,6 +1,6 @@
 ---
 title: Project Title 6
-date: ""
+date: 2021-10-01T22:00:00.000Z
 tags:
   - project
   - featured

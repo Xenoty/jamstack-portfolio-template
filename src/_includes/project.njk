@@ -68,24 +68,5 @@ eleventyComputed:
         <a href="/work/" class="btn-primary top-m-s">All Projects</a><a href="#project-title" class="btn-primary" style="margin-top: 15px;">Back to Top</a>
 </div>
 
-<script>
-    $(document).ready(function() {
-        WrapCodeTagsWithPreTags();
-        AppenBulletListSpanToLists();
-    });
-
-    function AppenBulletListSpanToLists(){
-      $(".markdown ul, .markdown ol").children().prepend("<span class='bullet-point'></span>")
-    }
-
-    function WrapCodeTagsWithPreTags(){
-        $("code").parent().each(function(index){
-            if(!$(this).is('pre'))
-            {
-                $(this).children().wrap("<pre class='language-csharp' tabindex='0'></pre>");
-            }
-        });
-    }
-</script>
-
+<script src="/markdown.js"></script>
 <script src="/assets/themes/prism.js"></script>

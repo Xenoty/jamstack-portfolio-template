@@ -7,7 +7,7 @@ publish_mode: editorial_workflow
 site_url: "https://11ty-portfolio-template.netlify.app/"
 logo_url: "https://11ty-portfolio-template.netlify.app/assets/images/logoipsum-logo-1.svg"
 collections:
-  - label: "Projects" 
+  - label: "Project" 
     name: "project"
     folder: "src/projects" 
     create: true 

@@ -71,9 +71,5 @@ date: 2021-02-01
 
 <script>
     var amountOfCards = $('.projects').children().length;
-    if(amountOfCards > 0 && amountOfCards % 2 !== 0){
-        $('.projects').children().last().addClass("last-card");
-    }
-
     $(".pagination span").html("(" + amountOfCards + ")");
 </script>

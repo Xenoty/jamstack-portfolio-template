@@ -7,7 +7,7 @@ publish_mode: editorial_workflow
 site_url: "https://11ty-portfolio-template.netlify.app/"
 logo_url: "https://11ty-portfolio-template.netlify.app/assets/images/logoipsum-logo-1.svg"
 collections:
-  - label: "All Projects" 
+  - label: "Project" 
     name: "project"
     folder: "src/projects" 
     create: true 
@@ -15,7 +15,7 @@ collections:
     preview_path: projects/{{slug}}
     fields: 
      - { label: "Title", name: "title", widget: "string", hint: "The title of the project. This will also be displayed in the tab name." }
-     - { label: "Date", name: "date", widget: "datetime", required: false, hint: "When was the project created?" }
+     - { label: "Date", name: "date", widget: "datetime", hint: "When was the project created?" }
      - label: "Tags"
        name: "tags"
        widget: "select"

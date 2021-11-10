@@ -64,7 +64,7 @@ For help, view [Links to useful Resources](#links-to-useful-resources)
 
 ### Setup
 
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the project into your repo.
+1. Click [Use Tempalate](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template) to create a repository from the repo.
 2. In VSCode (or another code editor), install app's dependencies using the following CLI command
 > npm install
 3. Run the following in the CLI

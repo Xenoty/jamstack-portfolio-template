@@ -479,13 +479,48 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
     transform: rotate(0);
 }
 
+.popup-wrapper{
+    width: 100%;
+    max-height: 100px;
+    background-color: #adb3b32b;
+    padding: 2vh 0vh;
+    z-index: 12;
+}
+
+.popup-content{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.popup-wrapper p{
+    text-align: center;
+    color: #45cfd7;
+    font-size: 14px;
+}
+
+.popup-wrapper a{
+    color: #45cfd7;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.popup-content svg{
+    width: 15px;
+    height: inherit;
+    margin-left: 10px;
+}
+
+.popup-content svg:hover{
+    cursor: pointer;
+}
+
 /* #endregion */
 
 /* #region Landing */
 
 .landing{
-    background-color: var(--secondary-colour);
-    margin-top: calc(-1 * var(--nav-height));
+    /* margin-top: calc(-1 * var(--nav-height)); */
 }
 
 .landing .hero{

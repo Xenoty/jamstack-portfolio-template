@@ -1,4 +1,4 @@
-# Portfolio Template
+# Jamstack Portfolio Template
 
 1. [Summary](#summary)
     1. [Key Notes](#key-notes)

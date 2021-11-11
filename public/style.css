@@ -481,7 +481,6 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .popup-wrapper{
     width: 100%;
-    max-height: 100px;
     background-color: #adb3b32b;
     padding: 2vh 0vh;
     z-index: 12;
@@ -490,7 +489,9 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 .popup-content{
     display: flex;
     width: fit-content;
+    max-width: 900px;
     margin: auto;
+    padding: 0 2vh;
 }
 
 .popup-wrapper p{
@@ -507,8 +508,9 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .popup-content svg{
     width: 15px;
+    min-width: 15px;
     height: inherit;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .popup-content svg:hover{

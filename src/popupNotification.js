@@ -6,14 +6,12 @@ if(DisplayPopUp()){
 
 function DisplayPopUp(){
     let popUpCookie = GetCookie("popup");
-
-    if(popUpCookie === null){
+    
+    if(popUpCookie === ""){
         SetCookie('popup', true, 3);
-
         return true;
-
     }else{
-        if(!!popUpCookie){
+        if(popUpCookie.toLowerCase() === "false"){
             return false;
         }
         return true;
@@ -21,21 +19,15 @@ function DisplayPopUp(){
 }
 
 function ClosePopUp(){
-    SetCookie('popup', false);
+    SetCookie('popup', false, 3);
     $("#popup").hide();
 }
 
 function SetCookie(cname, cvalue, exdays) {
-    var expireDate;
 
-    if(exdays){
-        const date = new Date();
-        date.setTime(date.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        expireDate = "expires=" + date.toUTCString();
-    }else{
-        var array = document.cookie.split(";");
-        expireDate = array[1];
-    }
+    const date = new Date();
+    date.setTime(date.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expireDate = "expires=" + date.toUTCString();
 
     document.cookie = cname + "=" + cvalue + ";" + expireDate + ";path=/";
 }

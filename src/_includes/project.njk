@@ -6,7 +6,6 @@ eleventyComputed:
     metaDescription: "{{summary}}"
     metaImage: "{{image}}"
 ---
-<link href="/assets/themes/prism.css" rel="stylesheet"/>
 
 <img class="work-bg-img" src="{{ image }}" alt="{{ imageAlt}}">
 <div class="section spacing full-page top-p-m">
@@ -66,5 +65,4 @@ eleventyComputed:
         <a href="/work/" class="btn-primary top-m-s">All Projects</a><a href="#project-title" class="btn-primary" style="margin-top: 15px;">Back to Top</a>
 </div>
 
-<script src="/markdown.js"></script>
-<script src="/assets/themes/prism.js"></script>
+{% include 'partials/_markdown-components.njk' %}

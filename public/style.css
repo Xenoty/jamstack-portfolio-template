@@ -327,8 +327,6 @@ nav {
     width: 100%;
     height: var(--nav-height);
     background-color: var(--secondary-colour);
-    /* TODO : Make the navbar sticky and dissapear when scrolling down, 
-    but appear when scrolling up */
     position: relative;
     z-index: 10;
 }
@@ -347,7 +345,6 @@ nav .nav-logo svg, nav .nav-logo object{
 }
 
 nav .nav-logo img{
-    /* max-width: 120px; */
     margin: auto;
     max-height: var(--nav-height);
     display: block;
@@ -398,12 +395,8 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: -1px;
     grid-row-gap: 6px;
-    /* height: inherit; */
     max-height: calc(var(--nav-height) * 0.80);
     margin-top: calc(var(--nav-height) * 0.20);
-    /* line-height: var(--nav-height); */
-    /* padding: 5px 0; */
-    /* margin: auto; */
 }
 
 .hamburger-icon .line{
@@ -436,11 +429,6 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .hamburger-links li a{
-    /* font-size: 20px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
     font-size: 20px;
     display: block;
     height: 100%;
@@ -521,10 +509,6 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 /* #region Landing */
 
-.landing{
-    /* margin-top: calc(-1 * var(--nav-height)); */
-}
-
 .landing .hero{
     position: absolute;
     top: 45%;
@@ -579,10 +563,6 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .projects{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4vw;
-    grid-row-gap: 5vh; */
     margin-bottom: 8vh;
     clear: both;
 }
@@ -623,7 +603,6 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 
 .card-date{
     font-size: 14px;
-    /* font-style: italic; */
     margin-bottom: 13px;
 }
 
@@ -664,7 +643,6 @@ nav .nav-links [aria-current]:hover, footer [aria-current]:hover{
 }
 
 .contact-detail *{
-    /* display: block; */
 }
 
 .contact-detail{
@@ -744,10 +722,6 @@ footer .footer-links{
 }
 
 footer .footer-link{
-    /* display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 8px; */
-    /* margin-bottom: 5px; */
 }
 
 .footer-link img{
@@ -842,11 +816,6 @@ footer .sitemap a{
     line-height: 20px;
 }
 
-/* .skill-card img{
-    border-radius: 25px;
-    box-shadow: 1px 3.5px 6px 1px rgb(0 0 0 / 17%);
-} */
-
 .interests-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -862,7 +831,6 @@ footer .sitemap a{
 }
 
 .interests-list img{
-    /* max-width: 300px; */
     margin: auto;
 }
 
@@ -1015,16 +983,9 @@ footer .sitemap a{
 
 /* #region Media Queries */
 
-@media screen and (min-width:1500px) {
-    /* .spacing{
-        max-width: 1400px;
-    } */
-}
-
 @media screen and (max-width:1100px){
 
     .section{
-        /* min-height: 60vh; */
         min-height: fit-content;
         margin: 10vh auto;
     }
@@ -1150,14 +1111,6 @@ footer .sitemap a{
 }
 
 @media screen and (max-width:450px){
-    /* .nav-links{
-        display: none !important;
-    }
-
-    .hamburger{
-        display: block;
-    } */
-
     footer{
         padding: 9vh 0;
     }

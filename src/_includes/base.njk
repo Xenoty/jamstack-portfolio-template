@@ -39,7 +39,13 @@
     {% include 'partials/_header.njk' %}
     
     <main>
+
+    <div id="popup-container">
+    </div>
+    <script src="/popupNotification.js"></script>
+
       {{ content | safe }}
+
     </main>
     
     {% include 'partials/_footer.njk' %}

@@ -993,7 +993,7 @@ footer .sitemap a{
 
     .landing {
         min-height: 100vh !important;
-        margin-top: calc(-1 * var(--nav-height)) !important;
+        margin-top: 0px !important;
     }
 
     .top-m-s {

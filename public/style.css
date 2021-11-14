@@ -844,6 +844,7 @@ footer .sitemap a{
     filter: brightness(55%);
     opacity: 0.3;
     min-height: calc(100vh + var(--nav-height));
+    z-index: -1;
 }
 
 .project-meta .meta-container{

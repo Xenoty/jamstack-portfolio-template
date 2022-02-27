@@ -1,5 +1,7 @@
 # Jamstack Portfolio Template
 
+![jamstack portfolio - landing page](https://user-images.githubusercontent.com/60667206/155888584-867f73cf-8660-43a1-94ec-47a90f7bd949.png)
+
 1. [Summary](#summary)
     1. [Key Notes](#key-notes)
     2. [Tech Stack](#tech-stack)
@@ -24,6 +26,7 @@ This is based on my implementation of the tech stack and is not the only way or 
 - The following project template provides free hosting and CMS through Netlify.
 - *publish_mode* has been set to *editorial_workflow*, this allows to save drafts and provide preview deploy links.
 - SEO has been integrated with user customizability.
+- Site optimized for mobile devices.
 - All content used is copyright free.
 
 ### Tech Stack
